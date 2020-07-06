@@ -1,51 +1,38 @@
 
-# Academic History - Web Development
-Below is a log of my academic history to help keep track of the tools I have used to learn front-end web development <br>
+# Academic History Log - Web Development
+This is a log of my academic history with many of the tools I have used to learn front-end web development <br>
 
-#### Personal Coding History - When it started
-I started coding in late 2017 in Granada, Spain where I had been living and teaching English to young kids. After my friend and collegue returned from summer vacation he excitedly shared his newfound interest in coding. I dabbled with FCC and enjoyed the mental challenge but to my dismay, due to a number of life events, I was unable to continue my coding education. It wasn't until late 2019 / early 2020 that I was able to refocus and restart learning to code. When the global pandemic of COVID-19 hit I was well underway of having a coding routine which was amplified and reinforced by the lockdown. Now I code nearly every day working on projects, taking courses, and reading in order to help expand my knowledge and skills with basic coding languages.
+### Personal Coding History - When it started
+I started coding in late 2017 in Granada, Spain where I had been living and teaching English to young kids. After my friend and collegue returned from summer vacation he excitedly shared his newfound interest in coding. The mental challenge coding presented was exciting. Unfortuantely many life events distracted me from my studies. It wasn't until early 2020 that I was able to refocus and restart learning to code. When COVID-19 hit I was well underway of having a coding routine. Now I code nearly every day working on projects, taking courses, and reading in order to help expand my knowledge and skills.
 
 ------
 
-## Coding log
+## Front-End Learning
 
-| Skill | Resource(s) | Achievement | Date |
-| :--------------: | ------ | ------ | :-------: |
-| HTML, CSS, JS | #Javascript30 | Color Canvas HTML5 Project | 6 July 2020 |
-| HTML, CSS, JS | #Javascript30 | Arrays Day 2 Project | 5 July 2020 |
-| CSS, JS | #Javascript30 | Type Ahead Project | 2 July 2020 |
-| CSS | #WhatTheFlexbox | Understanding FlexBox (20 mini Projects) | 2 July 2020 |
-| CSS, JS | #Javascript30 | Image Gallery Project | 25 June 2020 |
-| CSS, JS | #Javascript30 | Css Variables + JS Project | 19 June 2020 |
-| HTML, CSS, JS | #Javascript30 | Arrays Day 1 | 19 June 2020 |
-| CSS, JS | #Javascript30 | Clock Project | 17 June 2020 |
-| HTML, CSS, JS | #Javascript30 | JavaScript Drum Kit Project | 16 June 2020 |
-| JS, jQuery | Udemy: The Web Developer Bootcamp |  | 11 May 2020 |
-| HTML, CSS | Udemy: The Web Developer Bootcamp |  | 11 April 2020 |
-| HTML, CSS | FCC - Front End | Responsive Web Design Certificate | 13 Jan 2019 |
-| HTML, CSS | FCC - Front End | Personal Portfolio Webpage | 13 Nov 2017 |
-| HTML, CSS | FCC - Front End | Tribute Page Project | 12 Nov 2017 |
-| HTML, CSS | FCC - Front End | Survey Form Project | 12 Nov 2017 |
-| HTML, CSS | FCC - Front End | Product Landing Page Project | 11 Nov 2017 |
-| HTML, CSS | FCC - Front End | Technical Doc Page Project | 11 Nov 2017 |
-| HTML, CSS, JS | #100DaysOfCode | Web Developement Community Connection | 2017-Current |
+| Skill(s) | Type | Details | Date |
+| ------ | ------ | ------ | ------ |
+| CSS | Udemy: Advanced CSS and Sass | Flexbox, Grid, Animations + | UPCOMING |
+| JS | Udemy: The Modern Javascript Bootcamp Course | Advanced JS | UPCOMING |
+| HTML, CSS, JS | Wes Bos Course: [#Javascript30] (https://javascript30.com/) | Color Canvas HTML5 Project | 6 July 2020 |
+| HTML, CSS, JS | Wes Bos Course: [#Javascript30] (https://javascript30.com/)[#Javascript30] (https://javascript30.com/) | Arrays Day 2 Project | 5 July 2020 |
+| CSS, JS | Wes Bos Course: [#Javascript30] (https://javascript30.com/) | Type Ahead Project | 2 July 2020 |
+| CSS | Wes Bos Course: [#WhatTheFlexbox] (https://flexbox.io/) | Understanding FlexBox (video only) | 2 July 2020 |
+| CSS, JS | Wes Bos Course: [#Javascript30] (https://javascript30.com/) | Image Gallery Project | 25 June 2020 |
+| CSS, JS | Wes Bos Course: [#Javascript30] (https://javascript30.com/) | Css Variables + JS Project | 19 June 2020 |
+| HTML, CSS, JS | Wes Bos Course: [#Javascript30] (https://javascript30.com/) | Arrays Day 1 | 19 June 2020 |
+| CSS, JS | Wes Bos Course: [#Javascript30] (https://javascript30.com/) | Clock Project | 17 June 2020 |
+| HTML, CSS, JS | Wes Bos Course: [#Javascript30] (https://javascript30.com/) | JavaScript Drum Kit Project | 16 June 2020 |
+| JS, jQuery | [Udemy: The Web Developer Bootcamp] (https://www.udemy.com/course/the-web-developer-bootcamp/) | 11 May 2020 |
+| CSS | [Flexbox Froggy] (http://flexboxfroggy.com/) | Learning Flexbox | 7 May 2020
+| HTML, CSS | [Udemy: The Web Developer Bootcamp] (https://www.udemy.com/course/the-web-developer-bootcamp/) | 11 April 2020 |
+| HTML, CSS | [FCC] (https://www.freecodecamp.org/) - Front End | Responsive Web Design Certificate | 13 Jan 2019 |
+| HTML, CSS | [FCC] (https://www.freecodecamp.org/) - Front End | Personal Portfolio Webpage | 13 Nov 2017 |
+| HTML, CSS | [FCC] (https://www.freecodecamp.org/) - Front End | Tribute Page Project | 12 Nov 2017 |
+| HTML, CSS | [FCC] (https://www.freecodecamp.org/) - Front End | Survey Form Project | 12 Nov 2017 |
+| HTML, CSS | [FCC] (https://www.freecodecamp.org/) - Front End | Product Landing Page Project | 11 Nov 2017 |
+| HTML, CSS | [FCC] (https://www.freecodecamp.org/) - Front End | Technical Doc Page Project | 11 Nov 2017 |
+| HTML, CSS, JS | [#100DaysOfCode] (https://www.100daysofcode.com/) | Web Developement Community Connection | 2017-Current |
 
-
-
-
-|  | Course | Learn to use [Command line](https://commandlinepoweruser.com/)|  ||
-
-
-## React
-
-| Progress | Type | Item | Project(s) | Date |
-|:------:|------|------|------------|:-------:|
-|   | Course | Learn React - [React For Beginners - Wes Bos](https://reactforbeginners.com/) (Paid) or [React Fundamentals - Tyler Mcginnis](https://reacttraining.com/online/react-fundamentals) (Paid) OR [Learn React @Egghead.io](https://egghead.io/courses/start-learning-react) |   |    |
-|   | Course | Learn Redux - [Redux course - Wes Bos](https://learnredux.com/) |   |    |
-|   | Project | FCC React Project - [Build a Markdown Previewer](https://www.freecodecamp.com/challenges/build-a-markdown-previewer) |   |    |
-|   | Project |  FCC React Project - [Build a Recipe Box App](https://www.freecodecamp.com/challenges/build-a-recipe-box) |   |    |
-|   | Project |  Clone the Netflix interface using React - pulling data from [the Movie DB API](https://www.themoviedb.org/documentation/api) |   |    |
-|   | Project | Clone [this Admin template](http://rubix410.sketchpixy.com/ltr/dashboard) using React |   |    |
 
 ## Backend (Node)
 | Progress | Type | Item | Project(s) | Date |
