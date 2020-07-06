@@ -15,7 +15,7 @@ I started coding in late 2017 in Granada, Spain where I had been living and teac
 | :-----: | :-----: | :-----: | ------ | ------ | ------ | ------ |
 | | ![check][check] | | [Udemy: Advanced CSS and Sass](https://www.udemy.com/course/advanced-css-and-sass/) | Flexbox, Grid, Animations + | UPCOMING |
 | | | ![check][check] |[Udemy: The Modern Javascript Bootcamp Course](https://www.udemy.com/course/javascript-beginners-complete-tutorial/) | Advanced JS | UPCOMING |
-| :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | Wes Bos Course: [#Javascript30](https://javascript30.com/) | Color Canvas HTML5 Project | 6 July 2020 |
+| :yellow_check_mark: | :heavy_check_mark: | :heavy_check_mark: | Wes Bos Course: [#Javascript30](https://javascript30.com/) | Color Canvas HTML5 Project | 6 July 2020 |
 | HTML, CSS, JS | Wes Bos Course: [#Javascript30](https://javascript30.com/) | Arrays Day 2 Project | 5 July 2020 |
 | CSS, JS | Wes Bos Course: [#Javascript30](https://javascript30.com/) | Type Ahead Project | 2 July 2020 |
 | CSS | Wes Bos Course: [#WhatTheFlexbox](https://flexbox.io/) | Understanding FlexBox (video) | 2 July 2020 |
