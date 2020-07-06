@@ -3,7 +3,7 @@
 This is a log of my academic history with many of the tools I have used to learn front-end web development <br>
 
 ### Personal Coding History - When it started
-I started coding in late 2017 in Granada, Spain where I had been living and teaching English to young kids. After my friend and collegue returned from summer vacation he excitedly shared his newfound interest in coding. The mental challenge coding presented was exciting. Unfortuantely many life events distracted me from my studies. It wasn't until early 2020 that I was able to refocus and restart learning to code. When COVID-19 hit I was well underway of having a coding routine. Now I code nearly every day working on projects, taking courses, and reading in order to help expand my knowledge and skills.
+I started coding in late 2017 in Granada, Spain where I had been living and teaching English to young kids. After my friend and collegue returned from summer vacation he excitedly shared his newfound interest in coding. Life events distracted me from my studies but in early 2020 I was able to refocus and restart learning to code. When COVID-19 hit I was well underway of having a coding routine. Now I code nearly every day working on projects, taking courses, and reading in order to help expand my knowledge and skills.
 
 ------
 
@@ -15,7 +15,7 @@ I started coding in late 2017 in Granada, Spain where I had been living and teac
 | :-----: | :-----: | :-----: | ------ | ------ | ------ | ------ |
 | | ![check][check] | | [Udemy: Advanced CSS and Sass](https://www.udemy.com/course/advanced-css-and-sass/) | Flexbox, Grid, Animations + | UPCOMING |
 | | | ![check][check] |[Udemy: The Modern Javascript Bootcamp Course](https://www.udemy.com/course/javascript-beginners-complete-tutorial/) | Advanced JS | UPCOMING |
-| HTML, CSS, JS | Wes Bos Course: [#Javascript30](https://javascript30.com/) | Color Canvas HTML5 Project | 6 July 2020 |
+| :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | Wes Bos Course: [#Javascript30](https://javascript30.com/) | Color Canvas HTML5 Project | 6 July 2020 |
 | HTML, CSS, JS | Wes Bos Course: [#Javascript30](https://javascript30.com/) | Arrays Day 2 Project | 5 July 2020 |
 | CSS, JS | Wes Bos Course: [#Javascript30](https://javascript30.com/) | Type Ahead Project | 2 July 2020 |
 | CSS | Wes Bos Course: [#WhatTheFlexbox](https://flexbox.io/) | Understanding FlexBox (video) | 2 July 2020 |
