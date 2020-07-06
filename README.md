@@ -1,15 +1,18 @@
 
 # Academic History - Web Development
-Below is a log of my academic history to help track of the tools I have used to learn front-end web development <br>
+Below is a log of my academic history to help keep track of the tools I have used to learn front-end web development <br>
+
+#### Personal Coding History - When it started
+I started coding in late 2017 in Granada, Spain where I had been living and teaching English to young kids. After my friend and collegue returned from summer vacation he excitedly shared his newfound interest in coding. I dabbled with FCC and enjoyed the mental challenge but to my dismay, due to a number of life events, I was unable to continue my coding education. It wasn't until late 2019 / early 2020 that I was able to refocus and restart learning to code. When the global pandemic of COVID-19 hit I was well underway of having a coding routine which was amplified and reinforced by the lockdown. Now I code nearly every day working on projects, taking courses, and reading in order to help expand my knowledge and skills with basic coding languages.
 
 ------
 
 ## Coding log
 
-| Language(s) | Resource(s) | Achievement | Date |
-| :------: | ------ | ------ | :-------: |
-| HTML, CSS, JS | #Javascript30 | Color Canvas HTML5 | 6 July 2020 |
-| HTML, CSS, JS | #Javascript30 | Arrays Day 2 | 5 July 2020 |
+| Skill | Resource(s) | Achievement | Date |
+| :--------------: | ------ | ------ | :-------: |
+| HTML, CSS, JS | #Javascript30 | Color Canvas HTML5 Project | 6 July 2020 |
+| HTML, CSS, JS | #Javascript30 | Arrays Day 2 Project | 5 July 2020 |
 | CSS, JS | #Javascript30 | Type Ahead Project | 2 July 2020 |
 | CSS | #WhatTheFlexbox | Understanding FlexBox (20 mini Projects) | 2 July 2020 |
 | CSS, JS | #Javascript30 | Image Gallery Project | 25 June 2020 |
@@ -17,13 +20,14 @@ Below is a log of my academic history to help track of the tools I have used to 
 | HTML, CSS, JS | #Javascript30 | Arrays Day 1 | 19 June 2020 |
 | CSS, JS | #Javascript30 | Clock Project | 17 June 2020 |
 | HTML, CSS, JS | #Javascript30 | JavaScript Drum Kit Project | 16 June 2020 |
-| HTML, CSS, JS | Udemy: The Web Developer Bootcamp |  | 11 April 2020 |
-| HTML, CSS | FCC | Responsive Web Design Certificate | 13 Jan 2019 |
-| HTML, CSS | FCC | Personal Portfolio Webpage | 13 Nov 2017 |
-| HTML, CSS | FCC | Tribute Page Project | 12 Nov 2017 |
-| HTML, CSS | FCC | Survey Form Project | 12 Nov 2017 |
-| HTML, CSS | FCC | Product Landing Page Project | 11 Nov 2017 |
-| HTML, CSS | FCC | Technical Doc Page Project | 11 Nov 2017 |
+| JS, jQuery | Udemy: The Web Developer Bootcamp |  | 11 May 2020 |
+| HTML, CSS | Udemy: The Web Developer Bootcamp |  | 11 April 2020 |
+| HTML, CSS | FCC - Front End | Responsive Web Design Certificate | 13 Jan 2019 |
+| HTML, CSS | FCC - Front End | Personal Portfolio Webpage | 13 Nov 2017 |
+| HTML, CSS | FCC - Front End | Tribute Page Project | 12 Nov 2017 |
+| HTML, CSS | FCC - Front End | Survey Form Project | 12 Nov 2017 |
+| HTML, CSS | FCC - Front End | Product Landing Page Project | 11 Nov 2017 |
+| HTML, CSS | FCC - Front End | Technical Doc Page Project | 11 Nov 2017 |
 | HTML, CSS, JS | #100DaysOfCode | Web Developement Community Connection | 2017-Current |
 
 
