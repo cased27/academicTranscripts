@@ -9,14 +9,16 @@ I started coding in late 2017 in Granada, Spain where I had been living and teac
 
 ## Front-End Learning
 
-| Skill(s) | Type | Details | Date |
-| ------ | ------ | ------ | ------ |
-| CSS | [Udemy: Advanced CSS and Sass](https://www.udemy.com/course/advanced-css-and-sass/) | Flexbox, Grid, Animations + | UPCOMING |
-| JS | [Udemy: The Modern Javascript Bootcamp Course](https://www.udemy.com/course/javascript-beginners-complete-tutorial/) | Advanced JS | UPCOMING |
+[check]: https://media1.thehungryjpeg.com/thumbs2/800_3670197_japjywnkqu4x5ovzfvubke3xsojzt0onp1hta5q9_check-mark-sign-checklist-green-marking-logo-check-web-pictogram-po.jpg "check"
+
+| HTML | CSS | JS | Other | Type | Details | Date |
+| ------ | ------ | ------ | ------ | ------ | ------ | ------ |
+| | [check] | | [Udemy: Advanced CSS and Sass](https://www.udemy.com/course/advanced-css-and-sass/) | Flexbox, Grid, Animations + | UPCOMING |
+| | | ![check][check] |[Udemy: The Modern Javascript Bootcamp Course](https://www.udemy.com/course/javascript-beginners-complete-tutorial/) | Advanced JS | UPCOMING |
 | HTML, CSS, JS | Wes Bos Course: [#Javascript30](https://javascript30.com/) | Color Canvas HTML5 Project | 6 July 2020 |
 | HTML, CSS, JS | Wes Bos Course: [#Javascript30](https://javascript30.com/) | Arrays Day 2 Project | 5 July 2020 |
 | CSS, JS | Wes Bos Course: [#Javascript30](https://javascript30.com/) | Type Ahead Project | 2 July 2020 |
-| CSS | Wes Bos Course: [#WhatTheFlexbox](https://flexbox.io/) | Understanding FlexBox (video only) | 2 July 2020 |
+| CSS | Wes Bos Course: [#WhatTheFlexbox](https://flexbox.io/) | Understanding FlexBox (video) | 2 July 2020 |
 | CSS, JS | Wes Bos Course: [#Javascript30](https://javascript30.com/) | Image Gallery Project | 25 June 2020 |
 | CSS, JS | Wes Bos Course: [#Javascript30](https://javascript30.com/) | Css Variables + JS Project | 19 June 2020 |
 | HTML, CSS, JS | Wes Bos Course: [#Javascript30](https://javascript30.com/) | Arrays Day 1 | 19 June 2020 |
