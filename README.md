@@ -1,6 +1,6 @@
 
 # Academic History Log - Web Development
-This is a log of my academic history with many of the tools I have used to learn front-end web development <br>
+This is a log of my academic history with many of the tools I have used to learn web development. In addition, I have added details of my general work history and a short bio. <br>
 
 ### Personal Coding History - When it started
 I started coding in late 2017 in Granada, Spain where I had been living and teaching English to young kids. After my friend and collegue returned from summer vacation he excitedly shared his newfound interest in coding. Life events distracted me from my studies but in early 2020 I was able to refocus and restart learning to code. When COVID-19 hit I was well underway of having a coding routine. Now I code nearly every day working on projects, taking courses, and reading in order to help expand my knowledge and skills.
@@ -15,7 +15,7 @@ I started coding in late 2017 in Granada, Spain where I had been living and teac
 | :large_orange_diamond: | :large_orange_diamond: | :large_orange_diamond: | |[Udemy: The Modern Javascript Bootcamp Course](https://www.udemy.com/course/javascript-beginners-complete-tutorial/) | Advanced JS | UPCOMING |
 | :large_orange_diamond: | :large_orange_diamond: | :large_orange_diamond: | | Wes Bos Course: [#Javascript30](https://javascript30.com/) | Color Canvas HTML5 Project | July 2020 |
 | :large_orange_diamond: | :large_orange_diamond: | :large_orange_diamond: | | Wes Bos Course: [#Javascript30](https://javascript30.com/) | Arrays Day 2 Project | July 2020 |
-| | :large_orange_diamond: | :large_orange_diamond: | | Wes Bos Course: [#Javascript30](https://javascript30.com/) | Type Ahead Project | July 2020 |
+| | :large_orange_diamond: | :large_orange_diamond: | Ajax | Wes Bos Course: [#Javascript30](https://javascript30.com/) | Type Ahead Project | July 2020 |
 | | :large_orange_diamond: | | FlexBox | Wes Bos Course: [#WhatTheFlexbox](https://flexbox.io/) | Understanding FlexBox (video) | July 2020 |
 | | :large_orange_diamond: | :large_orange_diamond: | | Wes Bos Course: [#Javascript30](https://javascript30.com/) | Image Gallery Project | June 2020 |
 | | :large_orange_diamond: | :large_orange_diamond: | | Wes Bos Course: [#Javascript30](https://javascript30.com/) | CSS Variables + JS Project | June 2020 |
@@ -48,6 +48,29 @@ I started coding in late 2017 in Granada, Spain where I had been living and teac
 * Reinforce learned ideas (flexbox, JS methods & syntax, etc)
 * Start new courses or small projects for motivation
 
+------
+
+### Bio
+Raised in the Santa Monica Mountains in Southern California I love being active and exploring the outdoors. I lean into challenges, both mental and physical, and I truly enjoy traveling and exploring outside my comfort zone. Among my long-term goals is to have the freedom of mobility to work remotely and live wherever I choose.
+
+### General Academic History
+| School | Location | Achievement | Date |
+| ------| ------ | ------ | ------ |
+| Oaks Christian School | Westlake Village, CA | HS Diploma | June 2007
+| University of Hawaii at Hilo | Hilo, HI | Soccer Scholarship | Dec 2008
+| Moorpark Community College | Moorpark, CA | AA Degree | June 2009
+| University of California at Santa Barbara | BA Degree | June 2011
+| University of Granada | Granada, Spain | Language Certificate| June 2013
+
+### General Work History
+| Title | Job | Location | Date |
+| ------| ------ | ------ | ------ |
+| Restaurant Manager | Marmalade Cafe | Malibu, CA | 2009 - 2012 |
+| Teacher | Ingles Divertido | Granada, Spain | 2013 - 2018 |
+| Executive Assistant | Cushman & Wakefield | Westlake Village, CA | 2018
+| Project Manager | G Major Management | Nashville, TN | 2018 - 2019
+
+------
 
 ## Attribution
 Inspired by [p1xt guides](https://github.com/P1xt/p1xt-guides), [My journey to becoming a web developer from scratch without a CS degree (and what I learned from it)](https://medium.freecodecamp.com/my-journey-to-becoming-a-web-developer-from-scratch-without-a-cs-degree-2-years-later-and-what-i-4a7fd2ff5503)
