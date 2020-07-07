@@ -13,27 +13,27 @@ I started coding in late 2017 in Granada, Spain where I had been living and teac
 
 | HTML | CSS | JS | Other | Type | Details | Date |
 | :-----: | :-----: | :-----: | ------ | ------ | ------ | ------ |
-| | ![check][check] | | [Udemy: Advanced CSS and Sass](https://www.udemy.com/course/advanced-css-and-sass/) | Flexbox, Grid, Animations + | UPCOMING |
-| | | ![check][check] |[Udemy: The Modern Javascript Bootcamp Course](https://www.udemy.com/course/javascript-beginners-complete-tutorial/) | Advanced JS | UPCOMING |
-| :yellow_check_mark: | :heavy_check_mark: | :heavy_check_mark: | Wes Bos Course: [#Javascript30](https://javascript30.com/) | Color Canvas HTML5 Project | 6 July 2020 |
-| HTML, CSS, JS | Wes Bos Course: [#Javascript30](https://javascript30.com/) | Arrays Day 2 Project | 5 July 2020 |
-| CSS, JS | Wes Bos Course: [#Javascript30](https://javascript30.com/) | Type Ahead Project | 2 July 2020 |
-| CSS | Wes Bos Course: [#WhatTheFlexbox](https://flexbox.io/) | Understanding FlexBox (video) | 2 July 2020 |
-| CSS, JS | Wes Bos Course: [#Javascript30](https://javascript30.com/) | Image Gallery Project | 25 June 2020 |
-| CSS, JS | Wes Bos Course: [#Javascript30](https://javascript30.com/) | Css Variables + JS Project | 19 June 2020 |
-| HTML, CSS, JS | Wes Bos Course: [#Javascript30](https://javascript30.com/) | Arrays Day 1 | 19 June 2020 |
-| CSS, JS | Wes Bos Course: [#Javascript30](https://javascript30.com/) | Clock Project | 17 June 2020 |
-| HTML, CSS, JS | Wes Bos Course: [#Javascript30](https://javascript30.com/) | JavaScript Drum Kit Project | 16 June 2020 |
-| JS, jQuery | [Udemy: The Web Developer Bootcamp](https://www.udemy.com/course/the-web-developer-bootcamp/) | 11 May 2020 |
-| CSS | [Flexbox Froggy](http://flexboxfroggy.com/) | Learning Flexbox | 7 May 2020
-| HTML, CSS | [Udemy: The Web Developer Bootcamp](https://www.udemy.com/course/the-web-developer-bootcamp/) | 11 April 2020 |
-| HTML, CSS | [FCC](https://www.freecodecamp.org/) - Front End | Responsive Web Design Certificate | 13 Jan 2019 |
-| HTML, CSS | [FCC](https://www.freecodecamp.org/) - Front End | Personal Portfolio Webpage | 13 Nov 2017 |
-| HTML, CSS | [FCC](https://www.freecodecamp.org/) - Front End | Tribute Page Project | 12 Nov 2017 |
-| HTML, CSS | [FCC](https://www.freecodecamp.org/) - Front End | Survey Form Project | 12 Nov 2017 |
-| HTML, CSS | [FCC](https://www.freecodecamp.org/) - Front End | Product Landing Page Project | 11 Nov 2017 |
-| HTML, CSS | [FCC](https://www.freecodecamp.org/) - Front End | Technical Doc Page Project | 11 Nov 2017 |
-| HTML, CSS, JS | [#100DaysOfCode](https://www.100daysofcode.com/) | Web Developement Community Connection | 2017-Current |
+| :large_orange_diamond: | :large_orange_diamond: | :large_orange_diamond: | | [Udemy: Advanced CSS and Sass](https://www.udemy.com/course/advanced-css-and-sass/) | Flexbox, Grid, Animations + | UPCOMING |
+| :large_orange_diamond: | :large_orange_diamond: | :large_orange_diamond: | |[Udemy: The Modern Javascript Bootcamp Course](https://www.udemy.com/course/javascript-beginners-complete-tutorial/) | Advanced JS | UPCOMING |
+| :large_orange_diamond: | :large_orange_diamond: | :large_orange_diamond: | | Wes Bos Course: [#Javascript30](https://javascript30.com/) | Color Canvas HTML5 Project | 6 July 2020 |
+| :large_orange_diamond: | :large_orange_diamond: | :large_orange_diamond: | | Wes Bos Course: [#Javascript30](https://javascript30.com/) | Arrays Day 2 Project | 5 July 2020 |
+| | :large_orange_diamond: | :large_orange_diamond: | | Wes Bos Course: [#Javascript30](https://javascript30.com/) | Type Ahead Project | 2 July 2020 |
+| | :large_orange_diamond: | | | Wes Bos Course: [#WhatTheFlexbox](https://flexbox.io/) | Understanding FlexBox (video) | 2 July 2020 |
+| | :large_orange_diamond: | :large_orange_diamond: | | Wes Bos Course: [#Javascript30](https://javascript30.com/) | Image Gallery Project | 25 June 2020 |
+| | :large_orange_diamond: | :large_orange_diamond: | | Wes Bos Course: [#Javascript30](https://javascript30.com/) | Css Variables + JS Project | 19 June 2020 |
+| :large_orange_diamond: | :large_orange_diamond: | :large_orange_diamond: | | Wes Bos Course: [#Javascript30](https://javascript30.com/) | Arrays Day 1 | 19 June 2020 |
+| | :large_orange_diamond: | :large_orange_diamond: | | Wes Bos Course: [#Javascript30](https://javascript30.com/) | Clock Project | 17 June 2020 |
+| :large_orange_diamond: | :large_orange_diamond: | :large_orange_diamond: | | Wes Bos Course: [#Javascript30](https://javascript30.com/) | JavaScript Drum Kit Project | 16 June 2020 |
+| |  | :large_orange_diamond: | |:large_orange_diamond: [Udemy: The Web Developer Bootcamp](https://www.udemy.com/course/the-web-developer-bootcamp/) | 11 May 2020 |
+| | :large_orange_diamond: | | | [Flexbox Froggy](http://flexboxfroggy.com/) | Learning Flexbox | 7 May 2020
+| :large_orange_diamond: | :large_orange_diamond: | | | [Udemy: The Web Developer Bootcamp](https://www.udemy.com/course/the-web-developer-bootcamp/) | 11 April 2020 |
+| :large_orange_diamond: | :large_orange_diamond: | | | [FCC](https://www.freecodecamp.org/) - Front End | Responsive Web Design Certificate | 13 Jan 2019 |
+| :large_orange_diamond: | :large_orange_diamond: | | | [FCC](https://www.freecodecamp.org/) - Front End | Personal Portfolio Webpage | 13 Nov 2017 |
+| :large_orange_diamond: | :large_orange_diamond: | | | [FCC](https://www.freecodecamp.org/) - Front End | Tribute Page Project | 12 Nov 2017 |
+| :large_orange_diamond: | :large_orange_diamond: | | | [FCC](https://www.freecodecamp.org/) - Front End | Survey Form Project | 12 Nov 2017 |
+| :large_orange_diamond: | :large_orange_diamond: | | | [FCC](https://www.freecodecamp.org/) - Front End | Product Landing Page Project | 11 Nov 2017 |
+| :large_orange_diamond: | :large_orange_diamond: | | | [FCC](https://www.freecodecamp.org/) - Front End | Technical Doc Page Project | 11 Nov 2017 |
+| :large_orange_diamond: | :large_orange_diamond: | :large_orange_diamond: | | [#100DaysOfCode](https://www.100daysofcode.com/) | Web Developement Community Connection | 2017-Current |
 
 
 ## Backend (Node)
