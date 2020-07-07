@@ -25,18 +25,19 @@ I started coding in late 2017 in Granada, Spain after my friend and collegue ret
 | |  | :large_orange_diamond: | jQuery <br> DOM | [Udemy: The Web Developer Bootcamp](https://www.udemy.com/course/the-web-developer-bootcamp/) | Intro & Advanced | May 2020 |
 | | :large_orange_diamond: | | Flexbox | [Flexbox Froggy](http://flexboxfroggy.com/) | Learning Flexbox | May 2020
 | :large_orange_diamond: | :large_orange_diamond: | | Bootstrap <br> Flexbox | [Udemy: The Web Developer Bootcamp](https://www.udemy.com/course/the-web-developer-bootcamp/) | Intro & Advanced | April 2020 |
-| :large_orange_diamond: | :large_orange_diamond: | | | [FCC](https://www.freecodecamp.org/) - Certificate | Responsive Web Design Certificate | Jan 2019 |
+| :large_orange_diamond: | :large_orange_diamond: | | Flexbox | [FCC](https://www.freecodecamp.org/) - Certificate | Responsive Web Design Certificate | Jan 2019 |
 | :large_orange_diamond: | :large_orange_diamond: | | | [FCC](https://www.freecodecamp.org/) - Front End Beginner | Personal Portfolio Webpage | Nov 2017 |
 | :large_orange_diamond: | :large_orange_diamond: | | | [FCC](https://www.freecodecamp.org/) - Front End Beginner | Tribute Page Project | Nov 2017 |
 | :large_orange_diamond: | :large_orange_diamond: | | | [FCC](https://www.freecodecamp.org/) - Front End Beginner | Survey Form Project | Nov 2017 |
 | :large_orange_diamond: | :large_orange_diamond: | | | [FCC](https://www.freecodecamp.org/) - Front End Beginner | Product Landing Page Project | Nov 2017 |
 | :large_orange_diamond: | :large_orange_diamond: | | | [FCC](https://www.freecodecamp.org/) - Front End Beginner | Technical Doc Page Project | Nov 2017 |
 | :large_orange_diamond: | :large_orange_diamond: | :large_orange_diamond: | :large_orange_diamond: | [#100DaysOfCode](https://www.100daysofcode.com/) | Web Developement Community Connection | ONGOING |
-
+| :large_orange_diamond: | :large_orange_diamond: | :large_orange_diamond: | :large_orange_diamond: | Best Peer Advisor & Teacher | Fellow teacher-turned-coder | ONGOING |
 
 ## Backend (Node)
 | ** | ** | ** | ** | Type | Details | Date |
 | :-----: | :-----: | :-----: | ------ | ------ | ------ | ------ |
+| | | | | [FCC](https://www.freecodecamp.org/) - Back End Beginner | Backend Dev | UPCOMING |
 | | | | | [Udemy: The Web Developer Bootcamp](https://www.udemy.com/course/the-web-developer-bootcamp/) | Backend Dev | 7 July 2020 |
 
 ------
@@ -54,7 +55,7 @@ I started coding in late 2017 in Granada, Spain after my friend and collegue ret
 Raised in the Santa Monica Mountains in Southern California I love being active and exploring the outdoors. I lean into challenges, both mental and physical, and I truly enjoy traveling and exploring outside my comfort zone. Among my long-term goals is to have the freedom of mobility to work remotely and live wherever I choose. <br>
 <br>After graduating university I moved to Northern Spain and worked as a live-in au pair with a lovely Spanish family. I fell in love with the language, culture, and landscape and later found a job in the city of Granada, Spain. I lived there for 5 years teaching English to young kids and eventually moved back to my hometown of CA after being offered a promising opportunity to expand my work experience. Since then, I have been interested gaining more freedom of mobility to be able to travel and make a living doing something I love - hence my excitement to learn web development! <br>
 
-### General Academic History
+### Academic History
 | School | Location | Achievement | Date |
 | ------| ------ | ------ | ------ |
 | Oaks Christian School | Westlake Village, CA | HS Diploma | June 2007
@@ -64,7 +65,7 @@ Raised in the Santa Monica Mountains in Southern California I love being active 
 | University of Granada | Granada, Spain | Language Certificate| June 2013
 <br>
 
-### General Work History
+### Work History
 | Job Title | Company | Location | Date |
 | ------| ------ | ------ | ------ |
 | Restaurant Manager | Marmalade Cafe | Malibu, CA | 2009 - 2012 |
