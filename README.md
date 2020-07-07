@@ -1,6 +1,6 @@
 
 # Academic History Log - Web Development
-This is a log of my academic history with many of the tools I have used to learn web development. In addition, I have added details of my general work history and a short bio. <br>
+This is a log of my academic history with many of the tools I have used to learn web development. In addition, I have added details of my general work & education history and a short bio. <br>
 
 ### Personal Coding History - When it started
 I started coding in late 2017 in Granada, Spain after my friend and collegue returned from summer vacation and excitedly shared his newfound interest in coding. Life events distracted me from my studies but in early 2020 I was able to refocus and restart learning to code. Now I code nearly every day working on projects, taking courses, and reading in order to help reinforce and expand my knowledge and skills.
@@ -50,9 +50,9 @@ I started coding in late 2017 in Granada, Spain after my friend and collegue ret
 
 ------
 
-## Bio
-Raised in the Santa Monica Mountains in Southern California I love being active and exploring the outdoors. I lean into challenges, both mental and physical, and I truly enjoy traveling and exploring outside my comfort zone. Among my long-term goals is to have the freedom of mobility to work remotely and live wherever I choose.
-After graduating university I moved to Northern Spain and worked as a live-in au pair with a lovely Spanish family. I fell in love with the language, culture, and landscape and later found a job in the city of Granada, Spain. I lived there for 5 years teaching English to young kids and eventually moved back to my hometown of CA after being offered a great job. Since then, I have been interested in changing my career in order to have more freedom of mobility to be able to travel and make a living doing something I love - hence my excitement to learn web development!
+## Personal Biography
+Raised in the Santa Monica Mountains in Southern California I love being active and exploring the outdoors. I lean into challenges, both mental and physical, and I truly enjoy traveling and exploring outside my comfort zone. Among my long-term goals is to have the freedom of mobility to work remotely and live wherever I choose. <br>
+After graduating university I moved to Northern Spain and worked as a live-in au pair with a lovely Spanish family. I fell in love with the language, culture, and landscape and later found a job in the city of Granada, Spain. I lived there for 5 years teaching English to young kids and eventually moved back to my hometown of CA after being offered a promising opportunity to expand my work experience. Since then, I have been interested gaining more freedom of mobility to be able to travel and make a living doing something I love - hence my excitement to learn web development! <br>
 
 ### General Academic History
 | School | Location | Achievement | Date |
@@ -62,6 +62,7 @@ After graduating university I moved to Northern Spain and worked as a live-in au
 | Moorpark Community College | Moorpark, CA | AA Degree | June 2009
 | University of California at Santa Barbara | Santa Barbara, CA | BA Degree | June 2011
 | University of Granada | Granada, Spain | Language Certificate| June 2013
+<br>
 
 ### General Work History
 | Job Title | Company | Location | Date |
@@ -70,7 +71,7 @@ After graduating university I moved to Northern Spain and worked as a live-in au
 | Teacher | Ingles Divertido | Granada, Spain | 2013 - 2018 |
 | Executive Assistant | Cushman & Wakefield | Westlake Village, CA | 2018
 | Project Manager | G Major Management | Nashville, TN | 2018 - 2019
-
+<br>
 ------
 
 ## Attribution
