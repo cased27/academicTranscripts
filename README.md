@@ -22,9 +22,9 @@ I started coding in late 2017 in Granada, Spain after my friend and collegue ret
 | :large_orange_diamond: | :large_orange_diamond: | :large_orange_diamond: | | Wes Bos Course: [#Javascript30](https://javascript30.com/) | Arrays Day 1 | June 2020 |
 | | :large_orange_diamond: | :large_orange_diamond: | | Wes Bos Course: [#Javascript30](https://javascript30.com/) | Clock Project | June 2020 |
 | :large_orange_diamond: | :large_orange_diamond: | :large_orange_diamond: | | Wes Bos Course: [#Javascript30](https://javascript30.com/) | JavaScript Drum Kit Project | June 2020 |
-| |  | :large_orange_diamond: | jQuery <br> DOM | [Udemy: The Web Developer Bootcamp](https://www.udemy.com/course/the-web-developer-bootcamp/) | Intro to JS DOM & jQuery | May 2020 |
+| |  | :large_orange_diamond: | jQuery <br> DOM | [Udemy: The Web Developer Bootcamp](https://www.udemy.com/course/the-web-developer-bootcamp/) | Intro & Advanced | May 2020 |
 | | :large_orange_diamond: | | Flexbox | [Flexbox Froggy](http://flexboxfroggy.com/) | Learning Flexbox | May 2020
-| :large_orange_diamond: | :large_orange_diamond: | | Bootstrap | [Udemy: The Web Developer Bootcamp](https://www.udemy.com/course/the-web-developer-bootcamp/) | Intro to HTML & CSS | April 2020 |
+| :large_orange_diamond: | :large_orange_diamond: | | Bootstrap <br> Flexbox | [Udemy: The Web Developer Bootcamp](https://www.udemy.com/course/the-web-developer-bootcamp/) | Intro & Advanced | April 2020 |
 | :large_orange_diamond: | :large_orange_diamond: | | | [FCC](https://www.freecodecamp.org/) - Certificate | Responsive Web Design Certificate | Jan 2019 |
 | :large_orange_diamond: | :large_orange_diamond: | | | [FCC](https://www.freecodecamp.org/) - Front End Beginner | Personal Portfolio Webpage | Nov 2017 |
 | :large_orange_diamond: | :large_orange_diamond: | | | [FCC](https://www.freecodecamp.org/) - Front End Beginner | Tribute Page Project | Nov 2017 |
