@@ -52,7 +52,7 @@ I started coding in late 2017 in Granada, Spain after my friend and collegue ret
 
 ## Personal Biography
 Raised in the Santa Monica Mountains in Southern California I love being active and exploring the outdoors. I lean into challenges, both mental and physical, and I truly enjoy traveling and exploring outside my comfort zone. Among my long-term goals is to have the freedom of mobility to work remotely and live wherever I choose. <br>
-After graduating university I moved to Northern Spain and worked as a live-in au pair with a lovely Spanish family. I fell in love with the language, culture, and landscape and later found a job in the city of Granada, Spain. I lived there for 5 years teaching English to young kids and eventually moved back to my hometown of CA after being offered a promising opportunity to expand my work experience. Since then, I have been interested gaining more freedom of mobility to be able to travel and make a living doing something I love - hence my excitement to learn web development! <br>
+<br>After graduating university I moved to Northern Spain and worked as a live-in au pair with a lovely Spanish family. I fell in love with the language, culture, and landscape and later found a job in the city of Granada, Spain. I lived there for 5 years teaching English to young kids and eventually moved back to my hometown of CA after being offered a promising opportunity to expand my work experience. Since then, I have been interested gaining more freedom of mobility to be able to travel and make a living doing something I love - hence my excitement to learn web development! <br>
 
 ### General Academic History
 | School | Location | Achievement | Date |
@@ -72,6 +72,7 @@ After graduating university I moved to Northern Spain and worked as a live-in au
 | Executive Assistant | Cushman & Wakefield | Westlake Village, CA | 2018
 | Project Manager | G Major Management | Nashville, TN | 2018 - 2019
 <br>
+
 ------
 
 ## Attribution
