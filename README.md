@@ -1,9 +1,12 @@
 
-# Academic History Log - Web Development
+# My Learning Log - Web Development
 This is a log of my academic history with many of the tools I have used to learn web development. In addition, I have added details of my general work & education history and a short bio. <br>
 
-### Personal Coding History - When it started
+### Personal Coding History
 I started coding in late 2017 in Granada, Spain after my friend and collegue returned from summer vacation and excitedly shared his newfound interest in coding. Life events distracted me from my studies but in early 2020 I was able to refocus and restart learning to code. Now I code nearly every day working on projects, taking courses, and reading in order to help reinforce and expand my knowledge and skills.
+
+<!-- ### Connect With Me
+[Add PORTFOLIO PAGE link here] -->
 
 ------
 
@@ -63,7 +66,6 @@ Raised in the Santa Monica Mountains in Southern California I love being active 
 | Moorpark Community College | Moorpark, CA | AA Degree | June 2009
 | University of California at Santa Barbara | Santa Barbara, CA | BA Degree | June 2011
 | University of Granada | Granada, Spain | Language Certificate| June 2013
-<br>
 
 ### Work History
 | Job Title | Company | Location | Date |
