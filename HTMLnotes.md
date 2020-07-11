@@ -44,7 +44,7 @@ This is a compilation of my notes about the basics of HTML.<br>
 
 #### ATTRIBUTES
 * adds additional info or identifiers to tags
-* `<tagName ...="`<em>attribute</em>`"> ... </tag>` 
+* `<tagName`<em>attribute</em>`=""> ... </tag>` 
 * note: some tags are <em>self-closing</em> (meaning they do not require a closing tag)
 
 | TAGS                              | NAME               | DESCRIPTION                                            |
