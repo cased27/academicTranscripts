@@ -1,5 +1,5 @@
 # HTML NOTES
-This is a compilation of my notes about the basics of HTML <br>
+This is a compilation of my notes about the basics of HTML.<br>
 * it's the 'skeleton' of the page; no frills
 * comment/comment out code: `<!-- ... -->`
 * documents saved with ' .html ' in code editor
@@ -43,8 +43,8 @@ This is a compilation of my notes about the basics of HTML <br>
 ------
 
 #### ATTRIBUTES
-* adding additional info to tags
-* `<tagName = "value"> ... </tag>` 
+* adds additional info or identifiers to tags
+* `<tagName = "`<em>attribute</em>`"> ... </tag>` 
 * note: some tags are <em>self-closing</em> (meaning they do not require a closing tag)
 
 | TAGS                              | NAME               | DESCRIPTION                                            |
