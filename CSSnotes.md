@@ -5,7 +5,7 @@ This is a compilation of my notes about the basics of CSS.<br>
 * documents saved with ' .css ' in code editor
 
 #### 
-Selector { <br>
->property1: value; <br>
->property2: value; <br>
+>Selector { <br>
+>>property1: value; <br>
+>>property2: value; <br>
 }
