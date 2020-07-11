@@ -55,8 +55,8 @@ I started coding in late 2017 in Granada, Spain after my friend and collegue ret
 ------
 
 ## Personal Biography
-Raised in the Santa Monica Mountains in Southern California I love being active and exploring the outdoors. I lean into challenges, both mental and physical, and I truly enjoy traveling and exploring outside my comfort zone. Among my long-term goals is to have the freedom of mobility to work remotely and live wherever I choose. <br>
-<br>After graduating university I moved to Northern Spain and worked as a live-in au pair with a lovely Spanish family. I fell in love with the language, culture, and landscape and later found a job in the city of Granada, Spain. I lived there for 5 years teaching English to young kids and eventually moved back to my hometown of CA after being offered a promising opportunity to expand my work experience. Since then, I have been interested gaining more freedom of mobility to be able to travel and make a living doing something I love - hence my excitement to learn web development! <br>
+Raised in the Santa Monica Mountains in Southern California I love being active and exploring the outdoors. I lean into challenges, both mental and physical, and I truly enjoy traveling and exploring outside my comfort zone. <br>
+<br>After graduating university I moved to Northern Spain and worked as a live-in au pair with a lovely Spanish family. I fell in love with the language, culture, and landscape and later found a job in the city of Granada, Spain. I lived there for 5 years teaching English to young kids and eventually moved back to my hometown of CA after being offered a promising opportunity to expand my work experience. Since then I have been interested in gaining more freedom of mobility to be able to travel and make a living doing something I love - hence my excitement to learn web development! <br>
 
 ### Academic History
 | School | Location | Achievement | Date |
@@ -64,14 +64,15 @@ Raised in the Santa Monica Mountains in Southern California I love being active 
 | Oaks Christian School | Westlake Village, CA | HS Diploma | June 2007
 | University of Hawaii at Hilo | Hilo, HI | Scholarship | Dec 2008
 | Moorpark Community College | Moorpark, CA | AA Degree | June 2009
-| University of California at Santa Barbara | Santa Barbara, CA | BA Degree | June 2011
-| University of Granada | Granada, Spain | Language Certificate| June 2013
+| University of California at Santa Barbara | Santa Barbara, CA | BA Degree in Philosophy | June 2011
+| University of Granada | Granada, Spain | Spanish Language Certification | June 2013
 
 ### Work History
 | Job Title | Company | Location | Date |
 | ------| ------ | ------ | ------ |
 | Restaurant Manager | Marmalade Cafe | Malibu, CA | 2009 - 2012 |
-| Teacher | Ingles Divertido | Granada, Spain | 2013 - 2018 |
+| English Teacher | Ingles Divertido | Granada, Spain | 2013 - 2018 |
+| English Teaching Assistant | Ministry of Education in Spain | Granada, Spain | 2016-2018
 | Executive Assistant | Cushman & Wakefield | Westlake Village, CA | 2018
 | Project Manager | G Major Management | Nashville, TN | 2018 - 2019
 <br>
