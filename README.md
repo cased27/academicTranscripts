@@ -12,20 +12,20 @@ I started coding in late 2017 in Granada, Spain after my friend and collegue ret
 
 ## Front-End Learning
 
-| HTML | CSS | JS | Other | Type | Details | Date |
-| :-----: | :-----: | :-----: | ------ | ------ | ------ | ------ |
-| :large_orange_diamond: | :large_orange_diamond: | :large_orange_diamond: | FlexBox | [Udemy: Advanced CSS and Sass](https://www.udemy.com/course/advanced-css-and-sass/) | Flexbox, Grid, Animations | UPCOMING |
-| :large_orange_diamond: | :large_orange_diamond: | :large_orange_diamond: | |[Udemy: The Modern Javascript Bootcamp Course](https://www.udemy.com/course/javascript-beginners-complete-tutorial/) | Advanced JS | UPCOMING |
-| :large_orange_diamond: | :large_orange_diamond: | :large_orange_diamond: | | Wes Bos Course: [#Javascript30](https://javascript30.com/) | Color Canvas HTML5 Project | July 2020 |
-| :large_orange_diamond: | :large_orange_diamond: | :large_orange_diamond: | | Wes Bos Course: [#Javascript30](https://javascript30.com/) | Arrays Day 2 Project | July 2020 |
-| | :large_orange_diamond: | :large_orange_diamond: | Ajax | Wes Bos Course: [#Javascript30](https://javascript30.com/) | Type Ahead Project | July 2020 |
-| | :large_orange_diamond: | | FlexBox | Wes Bos Course: [#WhatTheFlexbox](https://flexbox.io/) | Understanding FlexBox (video) | July 2020 |
-| | :large_orange_diamond: | :large_orange_diamond: | | Wes Bos Course: [#Javascript30](https://javascript30.com/) | Image Gallery Project | June 2020 |
-| | :large_orange_diamond: | :large_orange_diamond: | | Wes Bos Course: [#Javascript30](https://javascript30.com/) | CSS Variables + JS Project | June 2020 |
-| :large_orange_diamond: | :large_orange_diamond: | :large_orange_diamond: | | Wes Bos Course: [#Javascript30](https://javascript30.com/) | Arrays Day 1 | June 2020 |
-| | :large_orange_diamond: | :large_orange_diamond: | | Wes Bos Course: [#Javascript30](https://javascript30.com/) | Clock Project | June 2020 |
-| :large_orange_diamond: | :large_orange_diamond: | :large_orange_diamond: | | Wes Bos Course: [#Javascript30](https://javascript30.com/) | JavaScript Drum Kit Project | June 2020 |
-| |  | :large_orange_diamond: | jQuery <br> DOM | [Udemy: The Web Developer Bootcamp](https://www.udemy.com/course/the-web-developer-bootcamp/) | Intro & Advanced | May 2020 |
+| HTML                   | CSS                    | JS                     | Other           | Type                                                                                                                 | Details                       | Date      |
+|------------------------|------------------------|------------------------|-----------------|----------------------------------------------------------------------------------------------------------------------|-------------------------------|-----------|
+| :large_orange_diamond: | :large_orange_diamond: | :large_orange_diamond: | FlexBox         | [Udemy: Advanced CSS and Sass](https://www.udemy.com/course/advanced-css-and-sass/)                                  | Flexbox, Grid, Animations     | UPCOMING  |
+| :large_orange_diamond: | :large_orange_diamond: | :large_orange_diamond: |                 | [Udemy: The Modern Javascript Bootcamp Course](https://www.udemy.com/course/javascript-beginners-complete-tutorial/) | Advanced JS                   | UPCOMING  |
+| :large_orange_diamond: | :large_orange_diamond: | :large_orange_diamond: |                 | Wes Bos Course: [#Javascript30](https://javascript30.com/)                                                           | Color Canvas HTML5 Project    | July 2020 |
+| :large_orange_diamond: | :large_orange_diamond: | :large_orange_diamond: |                 | Wes Bos Course: [#Javascript30](https://javascript30.com/)                                                           | Arrays Day 2 Project          | July 2020 |
+|                        | :large_orange_diamond: | :large_orange_diamond: | Ajax            | Wes Bos Course: [#Javascript30](https://javascript30.com/)                                                           | Type Ahead Project            | July 2020 |
+|                        | :large_orange_diamond: |                        | FlexBox         | Wes Bos Course: [#WhatTheFlexbox](https://flexbox.io/)                                                               | Understanding FlexBox (video) | July 2020 |
+|                        | :large_orange_diamond: | :large_orange_diamond: |                 | Wes Bos Course: [#Javascript30](https://javascript30.com/)                                                           | Image Gallery Project         | June 2020 |
+|                        | :large_orange_diamond: | :large_orange_diamond: |                 | Wes Bos Course: [#Javascript30](https://javascript30.com/)                                                           | CSS Variables + JS Project    | June 2020 |
+| :large_orange_diamond: | :large_orange_diamond: | :large_orange_diamond: |                 | Wes Bos Course: [#Javascript30](https://javascript30.com/)                                                           | Arrays Day 1                  | June 2020 |
+|                        | :large_orange_diamond: | :large_orange_diamond: |                 | Wes Bos Course: [#Javascript30](https://javascript30.com/)                                                           | Clock Project                 | June 2020 |
+| :large_orange_diamond: | :large_orange_diamond: | :large_orange_diamond: |                 | Wes Bos Course: [#Javascript30](https://javascript30.com/)                                                           | JavaScript Drum Kit Project   | June 2020 |
+|                        |                        | :large_orange_diamond: | jQuery <br> DOM | [Udemy: The Web Developer Bootcamp](https://www.udemy.com/course/the-web-developer-bootcamp/)                        | Intro & Advanced              | May 2020  |
 | | :large_orange_diamond: | | Flexbox | [Flexbox Froggy](http://flexboxfroggy.com/) | Learning Flexbox | May 2020
 | :large_orange_diamond: | :large_orange_diamond: | | Bootstrap <br> Flexbox | [Udemy: The Web Developer Bootcamp](https://www.udemy.com/course/the-web-developer-bootcamp/) | Intro & Advanced | April 2020 |
 | :large_orange_diamond: | :large_orange_diamond: | | Flexbox | [FCC](https://www.freecodecamp.org/) - Certificate | Responsive Web Design Certificate | Jan 2019 |
@@ -38,10 +38,10 @@ I started coding in late 2017 in Granada, Spain after my friend and collegue ret
 | :large_orange_diamond: | :large_orange_diamond: | :large_orange_diamond: | :large_orange_diamond: | Best Peer Advisor & Teacher | Fellow teacher-turned-coder | ONGOING |
 
 ## Backend (Node)
-| ** | ** | ** | ** | Type | Details | Date |
-| :-----: | :-----: | :-----: | ------ | ------ | ------ | ------ |
-| | | | | [FCC](https://www.freecodecamp.org/) - Back End Beginner | Backend Dev | UPCOMING |
-| | | | | [Udemy: The Web Developer Bootcamp](https://www.udemy.com/course/the-web-developer-bootcamp/) | Backend Dev | 7 July 2020 |
+| ** | ** | ** | ** | Type                                                                                          | Details     | Date        |
+|----|----|----|----|-----------------------------------------------------------------------------------------------|-------------|-------------|
+|    |    |    |    | [FCC](https://www.freecodecamp.org/) - Back End Beginner                                      | Backend Dev | UPCOMING    |
+|    |    |    |    | [Udemy: The Web Developer Bootcamp](https://www.udemy.com/course/the-web-developer-bootcamp/) | Backend Dev | 7 July 2020 |
 
 ------
 
@@ -68,10 +68,10 @@ Raised in the Santa Monica Mountains in Southern California I love being active 
 | University of Granada | Granada, Spain | Spanish Language Certification | June 2013
 
 ### Work History
-| Job Title | Company | Location | Date |
-| ------| ------ | ------ | ------ |
-| Restaurant Manager | Marmalade Cafe | Malibu, CA | 2009 - 2012 |
-| English Teacher | Ingles Divertido | Granada, Spain | 2013 - 2018 |
+| Job Title          | Company          | Location       | Date        |
+|--------------------|------------------|----------------|-------------|
+| Restaurant Manager | Marmalade Cafe   | Malibu, CA     | 2009 - 2012 |
+| English Teacher    | Ingles Divertido | Granada, Spain | 2013 - 2018 |
 | English Teaching Assistant | Ministry of Education in Spain | Granada, Spain | 2016-2018
 | Executive Assistant | Cushman & Wakefield | Westlake Village, CA | 2018
 | Project Manager | G Major Management | Nashville, TN | 2018 - 2019
