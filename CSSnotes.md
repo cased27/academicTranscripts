@@ -6,6 +6,6 @@ This is a compilation of my notes about the basics of CSS.<br>
 
 #### 
 Selector { <br>
->property1: value;
->property2: value;
+>property1: value; <br>
+>property2: value; <br>
 }
