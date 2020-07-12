@@ -3,10 +3,10 @@ I wanted to learn / practice Markdown as well as improve my organization and rev
 
 # Table of Contents
 
-- [HomePage](https://github.com/cased27/learningLog)auto
+- [Home Page](https://github.com/cased27/learningLog)
 
-- [learningLog](https://github.com/cased27/learningLog/blob/master/learningLog.md)auto
+- [learningLog](https://github.com/cased27/learningLog/blob/master/learningLog.md)
 
-- [HTML Notes](https://github.com/cased27/learningLog/blob/master/HTMLnotes.md)auto
+- [HTML Notes](https://github.com/cased27/learningLog/blob/master/HTMLnotes.md)
 
-- [CSS Notes](https://github.com/cased27/learningLog/blob/master/CSSnotes.md)auto
+- [CSS Notes](https://github.com/cased27/learningLog/blob/master/CSSnotes.md)
