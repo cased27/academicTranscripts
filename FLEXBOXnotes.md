@@ -143,3 +143,9 @@ The `flex-shrink` and `flex-basis` are optional. This format is recommended inst
 `.item {
     flex: none | 0 1 auto | ;
 }`
+
+<hr>
+
+### Attribution
+All pictures and information can be found at
+[CSS Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
