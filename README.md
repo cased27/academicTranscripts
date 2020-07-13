@@ -10,3 +10,7 @@ I wanted to learn / practice Markdown as well as improve my organization and rev
 - [HTML Notes](https://github.com/cased27/learningLog/blob/master/HTMLnotes.md)
 
 - [CSS Notes](https://github.com/cased27/learningLog/blob/master/CSSnotes.md)
+
+- [FLEXBOX Notes](https://github.com/cased27/learningLog/blob/master/FLEXBOXnotes.md)
+
+
