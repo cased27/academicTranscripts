@@ -3,11 +3,11 @@ I wanted to learn / practice Markdown as well as improve my organization and rev
 
 # Table of Contents
 
-- [Home Page](https://github.com/cased27/learningLog)
-This is the README page with Table of Contents
+[Home Page](https://github.com/cased27/learningLog)
+<br>Purpose + Table of Contents
 
-- [learningLog](https://github.com/cased27/learningLog/blob/master/learningLog.md)
-Academic History & Short Bio
+[learningLog](https://github.com/cased27/learningLog/blob/master/learningLog.md)
+<br>Academic History & Short Bio
 
 - [HTML Notes](https://github.com/cased27/learningLog/blob/master/HTMLnotes.md)
 
