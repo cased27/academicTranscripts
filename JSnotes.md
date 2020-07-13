@@ -9,7 +9,7 @@
 
 <a name="tableOfContents" class="tableOfContents"></a>
 
-### <u>TABLE OF CONTENTS</u>
+### <ins>TABLE OF CONTENTS</ins>
 There are a lot of notes on JS! Click any of the links below to jump to any particular topic
 
 - [Getting Started in the Code Editor](#getStarted)
@@ -53,12 +53,12 @@ Different categories of data
 
 * NULL: variables that are explicitly <em>nothing</em>
 	* used often in games for 'game over' or the end
-	<br>var currentPlayer = “charlie”; 
-	<br>currentPlayer = null; // game over 
+	<br>`var currentPlayer = “charlie”; `
+	<br>`currentPlayer = null;` // game over 
 				
 * UNDEFINED: variables that are declared but not initialized/ defined; it’s a ‘nothing’ value but only because it hasn’t been declared <em>yet</em>
-	* var name;  OR var age;
-	<br>both undefined; they are declared but no value is assigned (like var name = “Helen”) (in the console you'd get‘undefined’ because they have no value assigned to them) 
+	* `var name;`  OR `var age;`
+	<br>both undefined; they are declared but no value is assigned (like `var name = “Helen”`) (in the console you'd get ‘undefined’ because they have no value assigned to them) 
 
 ###### |[Table of Contents](#tableOfContents)| 
 <hr>
@@ -80,7 +80,7 @@ Recall the stored value by calling the variable name
 > `"hello there " + name` // "hello there Dusty"
 
 <br>
-<u>VAR vs LET vs CONST</u><br>
+<ins>VAR vs LET vs CONST</ins><br>
 General Rule: use <strong>const</strong> over <strong>let</strong>, use <strong>let</strong> over <strong>var</strong>, use <strong>var</strong> as little as possible (likely only with legacy code)
 
 * Var (variable) are scoped to the ‘current execution context’ (a variable’s enclosing function or the global scope) 
@@ -166,7 +166,7 @@ The JS Console can be used like a calculator
 * different operations are possible ( + - * / )
 * Order of operations / (PEMDAS) Parenthesis, Exponents, Multiplication, Division, Addition, Subtraction 
 
-<u>Modulo</u>: also called the remainder operator or Modulus is represented by ' % '
+<ins>Modulo</ins>: also called the remainder operator or Modulus is represented by ' % '
 
 * Ex: 10 % 3 will give you 1 
 <br>(it will divide 10 into 3 and then just give you the remainder as the solution)
@@ -199,11 +199,11 @@ Single or double quotes are OK (but they must match)
 * “I can’t stop eating candy” is VALID; you can have a single quote within a double 
 * ‘I can’t stop’ is INVALID; the console reads that the sting ends after can 
 
-<u>Concatenation</u>: adding strings together 
+<ins>Concatenation</ins>: adding strings together 
 * “hi” + “goodbye” = “higoodbye” 
 * “hi” + “ goodbye” = “hi goodbye” (adding space before “ goodbye” 
 
-<u>Escape Characters</u>: start with `\` (backslash) and allow you to add special characters 
+<ins>Escape Characters</ins>: start with `\` (backslash) and allow you to add special characters 
 
 * Adding `\` allows you to add special characters (like quotations that would normally be read by the console) without allowing the console to read it as something else 
 	* “she said \”goodbye!\”” will produce: she said “goodbye!” 
@@ -211,7 +211,7 @@ Single or double quotes are OK (but they must match)
 * To add an actual backslash to the code you would do a double backslash 
 “Hello world. \\” will produce: “Hello World. \” 
 
-<u>Length Property</u>: every string has a length property, starts counting at 1 
+<ins>Length Property</ins>: every string has a length property, starts counting at 1 
 
 * `“my favorite number is: 1234”.length` is 27 characters long (includes spaces)
 
@@ -231,7 +231,7 @@ Single or double quotes are OK (but they must match)
 These statements can be used to combine the initial T/F statement to create more complex statements that also evaluate to T/F 
 <br>
 
-<u>Comparison Operators</u> <br>
+<ins>Comparison Operators</ins> <br>
 (in table, ex assumes x = 5)
 
 | Operators | Name                           | Example   | Result |
@@ -245,7 +245,7 @@ These statements can be used to combine the initial T/F statement to create more
 |    ===    | equal to (value & datatype)    | x === "5" | false  |
 |    !==    | not equal to (value & datatype | x !== "5" |  true  |
 
-<br><u>Double Equals v Triple Equals (== vs ===)</u>
+<br><ins>Double Equals v Triple Equals (== vs ===)</ins>
 
 - == (double equal) performs type coercion
 				- ex: var x = 5  //  x==”5” is TRUE <br>
@@ -261,7 +261,7 @@ These statements can be used to combine the initial T/F statement to create more
 				Here we have a number and a string. With the triple equal JS will keep and compare the datatype and the value and see if they are the same 
 				- General Rule: always try to use === since it is more specific 
 
-<br><u>Logical Operators</u> (assuming below x = 5 and y = 9)
+<br><ins>Logical Operators</ins> (assuming below x = 5 and y = 9)
 
 | Operator | Name | Example            | Result | Explanation                  |
 |:--------:|:----:|--------------------|:------:|------------------------------|
@@ -269,17 +269,17 @@ These statements can be used to combine the initial T/F statement to create more
 |   \|\|   |  OR  | y > 9 \|\| x === 5 |  true  | requires 1 side to be T      |
 |    !     | NOT  | !(x===y)           |  true  | gives the opposite of result |
 
-<br><u>Truthy / Falsy</u> 
+<br><ins>Truthy / Falsy</ins> 
 
 * Every value (even those that aren’t actually T or F are still inherently ‘truthy’ or ‘falsey’ when evaluated in the a boolean context 
 * If you enter “hello” into the console, you will get “hello” in return. If you add boolean text, and enter !”hello” into the console, you will get false in return (now that you have entered the text in the context of boolean you will get a T/F, and in this case, !”hello” negates the “hello” so you get False; !!”hello” would double negate the “hello” so you would get “hello”=T, !”hello”=F, !!”hello”=T 
 * Everything is ALWAYS TRUTHY (including negatives) except: 
-* false = false (*the string “false” is T) 
-* “” = False (empty string is F) 
-* null = False 
-* 0 = False 
-* NaN = False 
-* undefined = false 
+	* false = false (*the string “false” is T) 
+	* “” = False (empty string is F) 
+	* null = False 
+	* 0 = False 
+	* NaN = False 
+	* undefined = false 
 * These inherent truths and falsehoods are specific to JS
 
 ###### |[Table of Contents](#tableOfContents)| 
