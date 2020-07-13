@@ -6,9 +6,39 @@
 * 'inspect' the page and use the console (developer's tool)
 * docs are saved with ' .js ' 
 
-<hr>
+### <u>TABLE OF CONTENTS</u>
+There are a lot of notes on JS! Click any of the links below to jump to any particular topic
 
-#### Primitive Datatypes 
+- [Getting Started in the Code Editor](#getStarted)
+- [Primitive Datatypes](#pDatatypes)
+- [Variables](#variables)
+- [Methods](#methods)
+- [Conditionals](#conditionals)
+- [Loops](#loops)
+- [Functions](#functions)
+- [Arguments](#arguments)
+- [Arrays](#arrays)
+- [Objects](#objects)
+
+<hr>
+<a name="getStarted" class="getStarted"></a>
+
+### GETTING STARTED IN THE CODE EDITOR 
+IDE: (Integrated Development Environment / Code Editor) communicate commands to the console w/o having to do so directly
+
+1. Open and create an HTML file, save (docName.html) 
+2. Open and create a Javascript file, save (docName.js) in same folder/location as html file 
+3. Link the HTML & Javascript files `<script src=”docName.js”></script>` 
+	* Location on the HTML doc: changing the location will change the order of operations for the webpage as it loads 
+	* If it’s in the `<head>` below `<title>` in the HTML doc all JS will load first, then HTML 
+	* If it’s in the `<body>` below all the text then the HTML will load first, then JS
+
+
+<hr>
+<a name="pDatatypes" class="pDatatypes"></a>
+
+### PRIMITIVE DATATYPES
+
 Different categories of data
 
 * [NUMBERS](#numbers): whole number (4) fraction (9.3) negative (-10); All numbers are treated the same 
@@ -26,6 +56,7 @@ Different categories of data
 	* var name;  OR var age;
 	<br>both undefined; they are declared but no value is assigned (like var name = “Helen”) (in the console you'd get‘undefined’ because they have no value assigned to them) 
 <hr>
+<a name="variables" class="variables"></a>
 
 ### VARIABLES
 
@@ -60,6 +91,47 @@ General Rule: use <strong>const</strong> over <strong>let</strong>, use <strong>
 	* It cannot be reassigned (not immutable, but variable reference cannot change) and cannot be redeclared (in the same scope) 
 	* It must be initialized with value 
 	* It does not create a property on the global window object 
+
+<hr>
+<a name="methods" class="methods"></a>
+
+### METHODS
+
+* `alert()` pops up a message to the user in a pop-up window 
+* `prompt()` can get input from the user 
+	* `prompt(“what is your name?”);`  
+	will send this question thru (with an answer box) in a pop-up window, allowing the user to answer. The answer will appear in the console 
+* `console.log()` prints out whatever text is requested through the console (not on the page itself) 
+
+<hr>
+<a name="conditionals" class="conditionals"></a>
+
+### CONDITIONALS
+
+<hr>
+<a name="loops" class="loops"></a>
+
+### LOOPS
+
+<hr>
+<a name="functions" class="functions"></a>
+
+### FUNCTIONS
+
+<hr>
+<a name="arguments" class="arguments"></a>
+
+### ARGUMENTS
+
+<hr>
+<a name="arrays" class="arrays"></a>
+
+### ARRAYS
+
+<hr>
+<a name="objects" class="objects"></a>
+
+### OBJECTS
 
 <hr>
 <a name="numbers" class="numbers"></a>
