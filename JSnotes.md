@@ -36,9 +36,7 @@ IDE: (Integrated Development Environment / Code Editor) communicate commands to 
 	* If it’s in the `<head>` below `<title>` in the HTML doc all JS will load first, then HTML 
 	* If it’s in the `<body>` below all the text then the HTML will load first, then JS
 
-| | 
-|---------:|
-|[Table of Contents](#tableOfContents)| 
+###### |[Table of Contents](#tableOfContents)| 
 
 <hr>
 <a name="pDatatypes" class="pDatatypes"></a>
@@ -61,6 +59,8 @@ Different categories of data
 * UNDEFINED: variables that are declared but not initialized/ defined; it’s a ‘nothing’ value but only because it hasn’t been declared <em>yet</em>
 	* var name;  OR var age;
 	<br>both undefined; they are declared but no value is assigned (like var name = “Helen”) (in the console you'd get‘undefined’ because they have no value assigned to them) 
+
+###### |[Table of Contents](#tableOfContents)| 
 <hr>
 <a name="variables" class="variables"></a>
 
@@ -98,6 +98,7 @@ General Rule: use <strong>const</strong> over <strong>let</strong>, use <strong>
 	* It must be initialized with value 
 	* It does not create a property on the global window object 
 
+###### |[Table of Contents](#tableOfContents)| 
 <hr>
 <a name="methods" class="methods"></a>
 
@@ -114,31 +115,48 @@ General Rule: use <strong>const</strong> over <strong>let</strong>, use <strong>
 
 ### CONDITIONALS
 
+
+###### |[Table of Contents](#tableOfContents)| 
 <hr>
 <a name="loops" class="loops"></a>
 
 ### LOOPS
 
+
+
+###### |[Table of Contents](#tableOfContents)| 
 <hr>
 <a name="functions" class="functions"></a>
 
 ### FUNCTIONS
 
+
+
+###### |[Table of Contents](#tableOfContents)| 
 <hr>
 <a name="arguments" class="arguments"></a>
 
 ### ARGUMENTS
 
+
+
+###### |[Table of Contents](#tableOfContents)| 
 <hr>
 <a name="arrays" class="arrays"></a>
 
 ### ARRAYS
 
+
+
+###### |[Table of Contents](#tableOfContents)| 
 <hr>
 <a name="objects" class="objects"></a>
 
 ### OBJECTS
 
+
+
+###### |[Table of Contents](#tableOfContents)| 
 <hr>
 <a name="numbers" class="numbers"></a>
 
@@ -166,6 +184,7 @@ The JS Console can be used like a calculator
 	* 9 % Math.sqrt(9) === 0 
 	<br>reads: “9 modulus the square root of 9, which is 3, results in no remainder then you have a perfect square (9/3 is 3, which means that if you divide a number by its own square root and you do not get a remainder, you have a perfect square)
  
+###### |[Table of Contents](#tableOfContents)| 
 <hr>
 <a name="strings" class="strings"></a>
 
@@ -204,6 +223,7 @@ Single or double quotes are OK (but they must match)
 
 	* Inputting `“The Beatles”[4]` will produce: “B” 
 
+###### |[Table of Contents](#tableOfContents)| 
 <hr>
 <a name="boolean" class="boolean"></a>
 
@@ -262,4 +282,5 @@ These statements can be used to combine the initial T/F statement to create more
 * undefined = false 
 * These inherent truths and falsehoods are specific to JS
 
+###### |[Table of Contents](#tableOfContents)| 
 <hr>
