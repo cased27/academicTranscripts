@@ -6,6 +6,9 @@
 * 'inspect' the page and use the console (developer's tool)
 * docs are saved with ' .js ' 
 
+
+<a name="tableOfContents" class="tableOfContents"></a>
+
 ### <u>TABLE OF CONTENTS</u>
 There are a lot of notes on JS! Click any of the links below to jump to any particular topic
 
@@ -26,13 +29,16 @@ There are a lot of notes on JS! Click any of the links below to jump to any part
 ### GETTING STARTED IN THE CODE EDITOR 
 IDE: (Integrated Development Environment / Code Editor) communicate commands to the console w/o having to do so directly
 
-1. Open and create an HTML file, save (docName.html) 
-2. Open and create a Javascript file, save (docName.js) in same folder/location as html file 
+1. Open and create an HTML file, save `docName.html`
+2. Open and create a Javascript file, save `docName.js` in same folder/location as html file 
 3. Link the HTML & Javascript files `<script src=”docName.js”></script>` 
 	* Location on the HTML doc: changing the location will change the order of operations for the webpage as it loads 
 	* If it’s in the `<head>` below `<title>` in the HTML doc all JS will load first, then HTML 
 	* If it’s in the `<body>` below all the text then the HTML will load first, then JS
 
+| | 
+|---------:|
+|[Table of Contents](#tableOfContents)| 
 
 <hr>
 <a name="pDatatypes" class="pDatatypes"></a>
