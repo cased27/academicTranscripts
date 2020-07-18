@@ -606,6 +606,8 @@ The JS Console can be used like a calculator
 	<br>reads: “9 modulus the square root of 9, which is 3, results in no remainder then you have a perfect square (9/3 is 3, which means that if you divide a number by its own square root and you do not get a remainder, you have a perfect square)
  
 ###### |[Table of Contents](#tableOfContents)| 
+###### |[Return to Primitive Datatypes](#pDatatypes)|
+
 <hr>
 <a name="strings" class="strings"></a>
 
@@ -647,6 +649,8 @@ Single or double quotes are OK (but they must match)
 	* Inputting `“The Beatles”[4]` will produce: “B” 
 
 ###### |[Table of Contents](#tableOfContents)| 
+###### |[Return to Primitive Datatypes](#pDatatypes)|
+
 <hr>
 <a name="boolean" class="boolean"></a>
 
@@ -708,4 +712,5 @@ These statements can be used to combine the initial T/F statement to create more
 * These inherent truths and falsehoods are specific to JS
 
 ###### |[Table of Contents](#tableOfContents)| 
+###### |[Return to Primitive Datatypes](#pDatatypes)|
 <hr>
