@@ -21,7 +21,7 @@ I wanted to learn / practice Markdown as well as improve my organization and rev
 
 - [All Things GIT](https://github.com/cased27/learningLog/blob/master/gitNotes.md)
 
-- [jQuery Notes]()
+- [jQuery Notes](https://github.com/cased27/learningLog/blob/master/jQueryNotes.md)
 
 - [Bootstrap Notes](https://github.com/cased27/learningLog/blob/master/bootstrapNotes.md)
 
