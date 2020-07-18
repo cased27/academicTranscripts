@@ -7,9 +7,9 @@ I wanted to learn / practice Markdown as well as improve my organization and rev
 <br>Purpose + Table of Contents
 
 [learningLog](https://github.com/cased27/learningLog/blob/master/learningLog.md) 
-<br>Academic History & Short Bio
+<br>Academic History + Short Bio
 
-## <ins>Notes</ins>
+## Notes
 
 - [HTML Notes](https://github.com/cased27/learningLog/blob/master/HTMLnotes.md)
 
