@@ -22,6 +22,7 @@ There are a lot of notes on JS! Click any of the links below to jump to any part
 - [Arguments](#arguments)
 - [Arrays](#arrays)
 - [Objects](#objects)
+- [DOM](#dom)
 
 <hr>
 <a name="getStarted" class="getStarted"></a>
@@ -117,6 +118,33 @@ Adding a function as a property/value of an object
 A method (`this.`)added to objects in order to access/share pre-defined data. It's a common pattern to organize code: you take data, put it inside an object, then take associated functions and add them as methods to the same object and use the keyword THIS to access the data that was pre-defined 
 
 
+<ins><a name="domMethods" class="domMethods">DOM Methods</a></ins> are used to select elements
+1. `document.getElementById( )` allows you to call an element using it’s ID tag <br>
+	>`var tag = document.getElementById(“enter ID name here”);` <br>
+	calling the variable ‘tag’ will bring up the entire item (whether it’s an `<li>` or other element) that contains the ID of the name entered 
+
+2. `document.getElementsByClassName( )` allows you to call an element using it’s CLASS tag <br>
+	>`var tags = document.getElementByClassName(“enter ClassName here”);` <br> calling the variable ‘tags’ will bring up the entire item (whether it’s an `<li>` or other element) that contains the CLASS NAME of the name entered
+	* Note ‘tags’ (plural) because there are more than one 
+	* You cannot use .forEach here because this is a list, not an array  
+
+3. `document.getElementsByTagName( )` allows you to call any element with the same tag name <br>
+	>`var tags = document.getElementsByTagName(“enter TagName here”);` <br>
+	calling the variable ‘tags’ will bring up a list (even if there is only one element) of every element with the same tag name (like `<li>, <h1>`) 
+
+4. `document.querySelector( )` returns the first element that matches a given CSS-style selector 
+	> `var tag = document.querySelector(“#enter ID name here”);` <br> 
+	calling the variable ‘tag’ will bring up the first item (whether it’s an `<li>` or other element) that contains the ID of the name entered <br>
+	`var tags = document.getElementByClassName(“.enter ClassName here”);` <br>
+	calling the variable ‘tags’ will bring up the first item (whether it’s an `<li>` or other element) that contains the CLASS NAME of the name entered
+	* Note that using `.querySelector` will give you an array 
+
+5. `document.querySelectorAll( )` returns all the elements that match a given CSS-style selector <br>
+	>`var tags = document.querySelectorAll(“h1”);` <br> 
+	calling the variable ‘tags’ will bring all the h1 elements <br>
+	`var tags = document.querySelectorAll(“.enter ClassName here”);` <br>
+	calling the variable ‘tags’ will bring all the h1 elements 
+	* Note that using `.querySelectorAll` will give you an Node list
 
 <hr>
 <a name="conditionals" class="conditionals"></a>
@@ -457,6 +485,95 @@ Objects store data in key-value pairs; they have no order (it’s not a list lik
 		`person.city: “LA”; `
 
 ###### |[Table of Contents](#tableOfContents)| 
+
+<hr>
+<a name="dom" class="dom"></a>
+
+### DOM
+
+Document Object Model is the interface between Javascript and HTML + CSS 
+
+* <em>Select</em> an element and then <em>manipulate</em>
+> Ex: select `h1` and then manipulate (change color from black to pink) <br> 
+`var h1 = document.querySelector(“h1”)` <br>
+`h1.style.color = “pink”;` 
+
+See [DOM Methods](#domMethods) section for more info on DOM Methods
+
+<ins>MANIPULATION</ins> 
+
+1. Style: you can use the style property to manipulate an element's style 
+	- Separation of Concerns: it's recommended for styles to be defined in a separate file(s). The style property allows for quick styling, for example for testing purposes 
+	- There are 3 basic parts to a webpage: Structure, Behavior, Presentation. They overlap slightly in some areas but it is a generally accepted rule that each part is responsible for it's own contribution to the page (i.e. CSS is for styling, HTML is for stucture/ skeleton, Javascript is for function (VERB). 
+
+		`var tag = document.getElementBy Id("highlight");` <br> 
+		`tag.style.color = "blue";` <br> 
+		`tag.style.border = "10px solid black";`<br>  
+
+2. Text & Content:  
+	- textContent: returns a string of all the text contained in a given element <br>
+	`<p>Hello <strong>World</strong></p> ` <br>
+	`var tag = document.querySelector("p");` <br> 
+	`tag.textContent ` <br>
+	//"Hello World" <br> 
+	*note it only returns the content, not the `<strong>` tag inside <br>
+
+		`tag.textContent = "blahblahblah"` <br>
+		//this will change the `<p>` to "blahblahblah" 
+
+ 	- Be careful overwriting with `.textContent` because it will change/ remove parts inside the content (i.e. in the above ex if you wrote "Goodbye World" it would also remove the `<strong>` tag) 
+
+ 	- **use `.innerHTML` as an alternative option to be able to select more specific tags. It will return everything as a string including the inside HTML elements 
+
+	- You can write HTML (with tags etc) with .innerHTML and it will show on the page like normal HTML. However `.textContent` will not; it reads everything literally and does not read an `<h1>` tag (for ex) as an `<h1>`… 
+
+3. Attributes: 
+
+	`.getAttribute( );` <br>
+	`.setAttribute( );` 
+
+	`var link = document.querySelector("a");` <br> 
+	`link.getAttribute("href");`     //"www.google.com" 
+	`link.setAttribute("href", www.dogs.com);`     
+	//`<a href = www.dogs.com> I am a link</a>` 
+
+	`Var img = document.querySelector("img");` <br> 
+	`img.setAttribute("src", "odie.png");` <br>
+	//`<img src="odie.png");` 
+
+<ins>EVENTS</ins> 
+
+Events make things interactive (for ex clicking a button, hovering over a link, etc).  
+
+* Process: first you select an element and then you add an event listener 
+
+	"Listen for a click on this `<button>`" <br>
+	"Listen for a hover event on the `<h1>`" 
+
+`.addEventListener` is used very often and there are two parts: 
+
+1. Type of event that you want to listen for 
+
+2. The code you want to run when the event happens 
+
+	Ex: display a message when a button has been clicked: 
+
+	`<button>Click Me</button>` <br>
+	`<p>No one has clicked me yet</p>` 
+
+	`var button = document.querySelector("button");` <br> 
+	`var paragraph = document.querySelector("p");` 
+
+SETUP CLICK LISTENER 
+
+`button.addEventListener("click", function() {` <br> 
+`paragraph.textContent = "Someone clicked the button!"; });` <br>
+
+You can have more than one 'listener' on an element 
+
+###### |[Table of Contents](#tableOfContents)| 
+
+
 <hr>
 <a name="numbers" class="numbers"></a>
 
