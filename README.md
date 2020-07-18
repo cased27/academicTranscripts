@@ -23,7 +23,7 @@ I wanted to learn / practice Markdown as well as improve my organization and rev
 
 - [jQuery Notes]()
 
-- [Bootstrap Notes]()
+- [Bootstrap Notes](https://github.com/cased27/learningLog/blob/master/bootstrapNotes.md)
 
 - [Web Design](https://github.com/cased27/learningLog/blob/master/webDesign.md)
 
