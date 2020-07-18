@@ -341,39 +341,39 @@ thing1 is at index 0, thing2 is at index 1, etc.
  
 
 1. PUSH: adds an item to the end of an array 
-	> `Var colors = [“red”, “orange”, “yellow”];`<br> 
+	`Var colors = [“red”, “orange”, “yellow”];`<br> 
 	`colors.push(“green”);` <br> 
 	// [“red”, “orange”, “yellow”, “green”] 
 
 2. POP: removes an item from the end of an array 
 
-	>`Var colors = [“red”, “orange”, “yellow”];` <br> 
+	`Var colors = [“red”, “orange”, “yellow”];` <br> 
 	`colors.pop();` // [“red”, “orange”] <br>
 	`pop();` // returns the removed element <br>
 	`var col = colors.pop();` // orange 
 
 3. UNSHIFT: adds an item to the front of an array 
 
-	> `Var colors = [“red”, “orange”, “yellow”];` <br> 
+	`Var colors = [“red”, “orange”, “yellow”];` <br> 
 	`colors.unshift(“infarared”)` <br> 
 	// [“infarared”, “red”, “orange”, “yellow”] 
 
 4. SHIFT: removes an item from the front of an array 
 
-	>`Var colors = [“red”, “orange”, “yellow”];` <br> 
+	`Var colors = [“red”, “orange”, “yellow”];` <br> 
 	`colors.shift();` // [“orange”, “yellow”] <br>
 	`Shift();` returns the removed element <br>
 	`var col = colors.shift();` // orange 
 
 5. IndexOf(): finds the index of an item in an array (it’s location in an array). Index starts at 0 
 
-	>`Var friends = [“Charlie”, “Liz”, “David”, “Matt”, “Liz”];` <br> 
+	`Var friends = [“Charlie”, “Liz”, “David”, “Matt”, “Liz”];` <br> 
 	`friends.indexOf(“David”);` //2 (returns the first index at which an element can be found) <br>
 	`friends.indexOf(“blue”);` //-1 (returns –1 if an element is not present) 
 
 6. SLICE: use slice() to copy parts of an array 
 
-	>`Var fruits = [“banana”, “orange”, “lemon”, “apple”, “mango”];` <br> 
+	`Var fruits = [“banana”, “orange”, “lemon”, “apple”, “mango”];` <br> 
 	`var citrus = fruits.slice(1, 3);` <br> 
 	// [“orange”, “lemon”] (var citrus contains these 2 items) <br>
 	//[“banana”, “orange”, “lemon”, “apple”, “mango”]  (var fruits contains all the items still) 
@@ -385,7 +385,7 @@ thing1 is at index 0, thing2 is at index 1, etc.
 * Loop 
 * ForEach: `arr.forEach(someFunciton)` 
 
-	>`var colors = [“red”, “orange”, “yellow”, “green”];` <br> 
+	`var colors = [“red”, “orange”, “yellow”, “green”];` <br> 
 	`colors.forEach(function(color){` <br> 
 	`console.log(color);` <br> 
 	`});` <br>
@@ -419,39 +419,39 @@ Objects store data in key-value pairs; they have no order (it’s not a list lik
 	`Console.log(person.name);` 
 
 	* You cannot use dot notation if the property starts with a number <br>
-		>`someObject.1blah` //INVALID <br>
+		`someObject.1blah` //INVALID <br>
 		`someObject[“1blah”]` //VALID 
 
 	* You cannot use dot notation for property names with spaces <br>
-		>`someObject.fav color` //INVALID <br>
+		`someObject.fav color` //INVALID <br>
 		`someObject[“fav color”]` //VALID 
 
 	* You can lookup using a variable with bracket notation <br>
-		>`Var str = “name”` <br> 
+		`Var str = “name”` <br> 
 		`someObject.str` //DOESN’T EVALUATE OR LOOK FOR “NAME” <br>
 		`someObject[str]` //EVALUATES STR AND LOOKS FOR “NAME” 
 
 * Just like an array, access a property to reassign it or edit/change it <br> 
-	> `person[“age”] += 1;` <br>
+	`person[“age”] += 1;` <br>
 	`Person.city = “London”;` <br> 
 	`dog.age = 6;`     //this will add the key “age” to the object 
 
 * Just like an array, there are a few methods of initializing objects 
 	* Make an empty object and then add to it <br>
-		> `Var person = { }` <br> 
+		`Var person = { }` <br> 
 		`person.name: “Travis”,` <br> 
 		`person.age: 21,` <br>
 		`person.city: “LA”;` <br>
 
 	* Add all the data at once (object literal notation, as seen in the initial ex for ‘objects’) <br>
-		>`Var person = {` <br> 
+		`Var person = {` <br> 
 		`name: “Travis”,` <br> 
 		`age: 21,` <br>  
 		`city: “LA” ` <br>
 		`}; `
 
 	* Make a ‘newObject’  
-		>`Var person = new Object(); `<br>
+		`Var person = new Object(); `<br>
 		`person.name: “Travis”,` <br>
 		`person.age: 21,`  <br>
 		`person.city: “LA”; `
