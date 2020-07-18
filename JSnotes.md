@@ -104,16 +104,54 @@ General Rule: use <strong>const</strong> over <strong>let</strong>, use <strong>
 
 ### METHODS
 
+Adding a function as a property/value of an object 
+
 * `alert()` pops up a message to the user in a pop-up window 
 * `prompt()` can get input from the user 
 	* `prompt(“what is your name?”);`  
 	will send this question thru (with an answer box) in a pop-up window, allowing the user to answer. The answer will appear in the console 
 * `console.log()` prints out whatever text is requested through the console (not on the page itself) 
 
+<ins>KEYWORD “THIS” </ins>
+
+A method (`this.`)added to objects in order to access/share pre-defined data. It's a common pattern to organize code: you take data, put it inside an object, then take associated functions and add them as methods to the same object and use the keyword THIS to access the data that was pre-defined 
+
+
+
 <hr>
 <a name="conditionals" class="conditionals"></a>
 
 ### CONDITIONALS
+
+Making decisions with code *the most important element to learn to code 
+
+<ins>Conditional statements:</ins> 
+
+1. IF statements 
+2. ELSE IF statements <br> 
+(must follow an IF statement; they function the same as an IF statement so it’s like a continuation of the IF statement) 
+3. ELSE statements 
+
+Conditionals are made in conjunction with Boolean logic and they work in order (from first code to last). Examples: 
+
+> If you are younger than 18, you cannot enter the venue <br>
+> If you are between 18 and 21 you can enter but cannot drink <br>
+> Otherwise, you can enter and drink 
+
+>`if(age < 18) {` <br>
+ `console.log(“sorry, you are not old enough to enter the venue”)}` <br> 
+ `else if(age < 21) {` <br> 
+ `console.log(“you can enter, but cannot drink”)}` <br> 
+ `else { ` <br>
+ `console.log(“come on in and drink!”)}`
+
+*Notes: 
+
+`<prompt>` always returns a string; there are many ways to convert strings into numbers (research) but one way is to insert `Number(prompt(…));` 
+
+`Math` is a built-in object that has properties and methods for mathematical constants and functions; it works with the Number type (*must be capital 'M')
+
+To find odd/even numbers, or square roots, etc use MODULO`(%)` and Math `(Math.sqrt)`
 
 
 ###### |[Table of Contents](#tableOfContents)| 
@@ -122,7 +160,55 @@ General Rule: use <strong>const</strong> over <strong>let</strong>, use <strong>
 
 ### LOOPS
 
+Loops are a way to condense code that is doing the same thing over and over again, i.e. rapidly complete repetitive tasks 
+* Counter: is the starting point of a loop 
+* Exit condition: criteria under which the loop stops (usually when it reaches a certain value) 
+* Iterator: generally increments the ‘counter’ by a small amount on each successive loop until reaching the exit condition 
 
+DRY: Don’t Repeat Yourself; always keep your code as DRY as possible for time-saving and clean code 
+
+1. WHILE LOOPS: repeats code WHILE a condition is True. It's very similar to an IF statement except an IF statement will run the code one time, a WHILE LOOP will repeat a given code block while a condition remains True 
+
+	* Ex: printing numbers 1-5 <br>
+	`var count = 1;` <br>
+	`while(count<6)` <br>
+	`{console.log(“count is: “ + count); count++;}` 
+
+	* ++ will add 1 to each number in succession 
+	* +=2 will add 2 to each number in succession 
+
+		* Ex: printing each character in a string <br>
+	`var str = “hello”;` <br>
+	`var count = 0;` <br>
+	`while(count < str.length)`<br> 
+	`{console.log(str(count)); count++;}` <br>
+		this will read as: “the string is defined as “hello” and the count starts at 0; while the count is less than the length of the string, add 1 to each count number for the letter of the string 
+
+	* Infinite Loops: occur when the terminating condition in a loop is never False *you NEVER want this to happen! 
+
+		* Example: <br>
+		`var count = 0;` <br>
+		`while (count < 10)`  
+		`{console.log(count);` <br>
+			this will read as: “count is = 0, while count is less than 10, console.log count.” But count is ALWAYS less than 10 since it isn’t being incremented, it will run an infinite loop 
+
+	* `.indexOf()` returns the first index at which a given element can be found in the array, or –1 if not found. In WHILE LOOPS it allows you to expand the scope of the user answer <br>
+		* Ex: adding an `.indexOf(“yes”)` to the annoy-o-matic will allow the user to answer “yes” or “yes we are” or “yes we have arrived” and because the `.indexOf(“yes”)` any answer that includes the word “yes”, even if it also includes more words than that, will complete the alert (and end the loop) 
+
+2. FOR LOOPS: another way of repeating code; typical to use short/ one-letter variables like “i” instead of “count” 
+the format always has 3 parts like this: for(initialize; condition; step) { … } 
+
+	* For ex: printing numbers 1-5 
+
+	* For Loop: below you can see the initialize value is var count = 0, the condition is count < 6,  and the step is count++. It is a more condensed version of the while loop below this example. NOTE: the variable is only declared within the loop 
+
+		`for(var count = 0; count < 6; count++) {…}`
+
+	* While Loop: this version is more drawn out and lengthy BUT as you can see the variable is not exclusive to the loop and must be declared outside of the loop <br>
+		`var count = 1;` <br> 
+		`while(count < 6) {` <br>
+		`console.log(“count is: “ + count);` <br> 
+		`count++; }` <br>
 
 ###### |[Table of Contents](#tableOfContents)| 
 <hr>
@@ -130,7 +216,85 @@ General Rule: use <strong>const</strong> over <strong>let</strong>, use <strong>
 
 ### FUNCTIONS
 
+Allows us wrap bits of code into reusable packages. They are one of the building blocks of JS 
 
+> `Function doSomething() {` <br> 
+  `console.log(“Hello World”); }` <br> 
+
+Then you call the function code: 
+
+> `doSomething();` <br> 
+
+Note: you can refer to a function `doSomething` which will just give you back the original function code that was written (it will not run the code it will just reveal what code was written in the console. In order to run the code you have to have the parenthesis and semicolon like this: `doSomething();` 
+
+* Ex: Twinkle Twinkle Little Star Song: instead of having to repeat the same code over and over again (writing many repeating console.logs which would not be DRY) every time you want the song sang you can write a function and then call the function whenever you want it sung: 
+
+>`function singSong() {` <br>
+  `console.log(“Twinkle, twinkle, little star,”);` <br>
+  `console.log(“How I wonder what you are!”);` <br>
+  `console.log(“Up above the world so high,”);` <br>
+  `console.log(“Like a diamond in the sky.”);` <br>
+
+>`singSong();` <br> 
+`singSong();`  
+
+Calling the function `singSong();` twice (as above) will sing the song twice w/o rewriting each line 
+
+Note: `clear()` is a function to clear the console 
+
+* <ins>Return Keyword:</ins> add an input into a function and it will produce an output (INPUT > FUNCTION > OUTPUT) <br>
+Without the return keyword you are getting a 'temporary’ response from the console.log. The information or code that is inputted is not being stored to be used elsewhere 
+
+	`Function square(x) {` <br>
+	`console.log(x * x); }` <br>
+
+	`Square(4);    //16` 
+
+	the response is only being console.logged; it is not able to be recalled again. In the console, the console.log will always return “undefined” unless a return has been specifically identified. 
+
+	By using the return keyword you can in essence ‘save’ the information in the console to be recalled. You are able to ‘send’ information/code outside of a function and use it in other code within the console 
+
+	`Function square(x) {` <br> 
+	`return x * x;` <br>
+
+	`Square(4);     //16` <br> 
+
+	This response is being stored/saved within the console so it can be recalled in other code within the console, like within a string or other code. Without the return, a console.log alone cannot be recalled later in other code since it would be identified solely in the confines of the console.log function. So now I could write the following and the console would be able to recall the function above to use in the code: 
+
+	`Var result = square(104);` 
+
+	`Result     //10816` 
+
+	In this case the function of square was recalled in the variable, the numbers computed (i.e. the square of 104), and stored in the variable called “result”; Result now stores the value of 10816 
+
+	By using a return you are stopping/ ending the execution of a function. i.e. once the return keyword is executed the function will stop running. 
+
+* Syntax to declare a function (there are 2) 
+
+	1. Function Declaration: you have a function, the name of the function, pass in arguments, and pass in the body of the function within the {} brackets 
+
+		`Function capitalize(str) {` <br>
+		`return str.charAt(0).toUpperCase() + str.slice(1); } `
+
+	2. Function Expression: set a variable which is set equal to a function; with this way, if you redeclare/ 
+
+		`Var capitalize = function(str) {` <br> 
+		`return str.charAt(0).toUpperCase() + str.slice(1); } `<br>
+
+<ins>NAMESPACING</ins>
+You can add a function with the same name if you identify each object of the function in a different way: <br>
+
+>`function speak( ) {` <br> 
+  `return “WOOF!”; }` 
+
+>`function speak( ) {` <br> 
+  `return “MEOW!”; } `
+
+> `var dogSpace = { };` <br> 
+`var catSpace = { };` <br> 
+
+>`dogSpace.speak( ); ` <br>
+`catSpace.speak( ); `
 
 ###### |[Table of Contents](#tableOfContents)| 
 <hr>
@@ -138,6 +302,18 @@ General Rule: use <strong>const</strong> over <strong>let</strong>, use <strong>
 
 ### ARGUMENTS
 
+Arguments are how to write functions that take inputs/ values; they are mutable and changing based on information provided. It's more than just repeating code because you can add new info/ change. A FB profile page has arguments that use the imputed data from the user.<br>
+> 	`Function square(num) {` <br> 
+  	`console.log(num + num); }` <br>
+	`square(10);    //100 ` <br>
+	`square(4);     //16 ` 
+
+Functions can take multiple arguments at a time: <br>
+(for a site that has to check credentials, you might add in multiple bits of info, like an email and password, which the code would have to check and then allow or deny access) 
+
+>`function area(length, width) {` <br> 
+`console.log(length * width); }` <br> 
+`area(9,2);     //18` <br>
 
 
 ###### |[Table of Contents](#tableOfContents)| 
@@ -146,7 +322,76 @@ General Rule: use <strong>const</strong> over <strong>let</strong>, use <strong>
 
 ### ARRAYS
 
+an array is a way to group data in a list
 
+* You can call each item in an array by calling the index <br>
+`var something =[thing1, thing2, thing3...]` <br> 
+thing1 is at index 0, thing2 is at index 1, etc. 
+
+* Empty arrays can be initialized in 2 ways <br> 
+`Var friends = [];`     //no friends <br>
+`Var friends = new Array();`     //uncommon way 
+
+* Arrays can hold any type of data (numbers, stings, etc) <br> 
+`Var random_collection = [49, true, “Hermione”];` 
+
+* Arrays have a length property <br>
+`Var nums = [45, 37, 89,, 34];` <br>
+`nums.length      //4` 
+ 
+
+1. PUSH: adds an item to the end of an array 
+	> `Var colors = [“red”, “orange”, “yellow”];`<br> 
+	`colors.push(“green”);` <br> 
+	// [“red”, “orange”, “yellow”, “green”] 
+
+2. POP: removes an item from the end of an array 
+
+	>`Var colors = [“red”, “orange”, “yellow”];` <br> 
+	`colors.pop();` // [“red”, “orange”] <br>
+	`pop();` // returns the removed element <br>
+	`var col = colors.pop();` // orange 
+
+3. UNSHIFT: adds an item to the front of an array 
+
+	> `Var colors = [“red”, “orange”, “yellow”];` <br> 
+	`colors.unshift(“infarared”)` <br> 
+	// [“infarared”, “red”, “orange”, “yellow”] 
+
+4. SHIFT: removes an item from the front of an array 
+
+	>`Var colors = [“red”, “orange”, “yellow”];` <br> 
+	`colors.shift();` // [“orange”, “yellow”] <br>
+	`Shift();` returns the removed element <br>
+	`var col = colors.shift();` // orange 
+
+5. IndexOf(): finds the index of an item in an array (it’s location in an array). Index starts at 0 
+
+	>`Var friends = [“Charlie”, “Liz”, “David”, “Matt”, “Liz”];` <br> 
+	`friends.indexOf(“David”);` //2 (returns the first index at which an element can be found) <br>
+	`friends.indexOf(“blue”);` //-1 (returns –1 if an element is not present) 
+
+6. SLICE: use slice() to copy parts of an array 
+
+	>`Var fruits = [“banana”, “orange”, “lemon”, “apple”, “mango”];` <br> 
+	`var citrus = fruits.slice(1, 3);` <br> 
+	// [“orange”, “lemon”] (var citrus contains these 2 items) <br>
+	//[“banana”, “orange”, “lemon”, “apple”, “mango”]  (var fruits contains all the items still) 
+
+	Use slice to copy the 2nd and 3rd fruits in the list (which are in index 1 and 2 respectively). However, when using slice, you have to indicate where the slice starts and where it ends. In the above example, the slice starts at index 1 (where “orange” is located) and ends at index 3 (where “apple” is located). So you would call index 1 and 3 in order to slice the items “orange” and “lemon”. 
+
+<ins>ITERATION</ins> (commonly seen in pages w comments): using loops and forEach to iterate over an array 
+
+* Loop 
+* ForEach: `arr.forEach(someFunciton)` 
+
+	>`var colors = [“red”, “orange”, “yellow”, “green”];` <br> 
+	`colors.forEach(function(color){` <br> 
+	`console.log(color);` <br> 
+	`});` <br>
+	(note: ’color’ is a placeholder; can be named anything). <br>
+  You are simply naming what each item in the array will be named and then calling each item in the console.log <br>
+  Reads as "in the array 'colors' call each item 'color' and then console.log each color."
 
 ###### |[Table of Contents](#tableOfContents)| 
 <hr>
@@ -154,7 +399,62 @@ General Rule: use <strong>const</strong> over <strong>let</strong>, use <strong>
 
 ### OBJECTS
 
+Objects store data in key-value pairs; they have no order (it’s not a list like an array). Think: dictionary... you look something up based on a key to get a corresponding value 
 
+>`Var person = { ` <br>
+  `name: “Travis”,` <br> 
+  `age: 21,` <br> 
+  `city: “LA” ` <br>
+`}; ` <br>
+
+* note the curly braces `{ }` are used instead of the square braces `[ ]` like in an array 
+
+* Each element in stored under the key-value (in this case it’s ‘name’, ‘age’, ‘city’) 
+
+* Objects can hold all sorts of data (strings, numbers, etc) just like arrays 
+
+* To retrieve the data you can use bracket notation or dot notation 
+
+	`Console.log(person[“name”]);` 
+	`Console.log(person.name);` 
+
+	* You cannot use dot notation if the property starts with a number <br>
+		>`someObject.1blah` //INVALID <br>
+		`someObject[“1blah”]` //VALID 
+
+	* You cannot use dot notation for property names with spaces <br>
+		>`someObject.fav color` //INVALID <br>
+		`someObject[“fav color”]` //VALID 
+
+	* You can lookup using a variable with bracket notation <br>
+		>`Var str = “name”` <br> 
+		`someObject.str` //DOESN’T EVALUATE OR LOOK FOR “NAME” <br>
+		`someObject[str]` //EVALUATES STR AND LOOKS FOR “NAME” 
+
+* Just like an array, access a property to reassign it or edit/change it <br> 
+	> `person[“age”] += 1;` <br>
+	`Person.city = “London”;` <br> 
+	`dog.age = 6;`     //this will add the key “age” to the object 
+
+* Just like an array, there are a few methods of initializing objects 
+	* Make an empty object and then add to it <br>
+		> `Var person = { }` <br> 
+		`person.name: “Travis”,` <br> 
+		`person.age: 21,` <br>
+		`person.city: “LA”;` <br>
+
+	* Add all the data at once (object literal notation, as seen in the initial ex for ‘objects’) <br>
+		>`Var person = {` <br> 
+		`name: “Travis”,` <br> 
+		`age: 21,` <br>  
+		`city: “LA” ` <br>
+		`}; `
+
+	* Make a ‘newObject’  
+		>`Var person = new Object(); `<br>
+		`person.name: “Travis”,` <br>
+		`person.age: 21,`  <br>
+		`person.city: “LA”; `
 
 ###### |[Table of Contents](#tableOfContents)| 
 <hr>
