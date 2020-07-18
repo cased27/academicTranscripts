@@ -19,14 +19,14 @@ I wanted to learn / practice Markdown as well as improve my organization and rev
 
 - [Javascript Notes](https://github.com/cased27/learningLog/blob/master/JSnotes.md)
 
-- [All Things GIT]()
+- [All Things GIT](https://github.com/cased27/learningLog/blob/master/gitNotes.md)
 
 - [jQuery Notes]()
 
 - [Bootstrap Notes]()
 
-- [Web Design]()
+- [Web Design](https://github.com/cased27/learningLog/blob/master/webDesign.md)
 
-- [Permutation & Combination]()
+- [Permutation & Combination](https://github.com/cased27/learningLog/blob/master/permComb.md)
 
 
