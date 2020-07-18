@@ -78,10 +78,18 @@ Text-decoration: adds effects to the text itself (underline, line-through, etc)
 
 <br>
 
-#### The Box Model 
+#### THE BOX MODEL 
 
 In a doc, each element is represented as a rectangular box. In CSS, each of these rectangular boxes is described using the standard box model. Each box has 4 edges: margin-edge, border-edge, padding-edge, and content-edge (from outside-in) 
 
 * These can be set (similar to “border”) as an all-in-one (i.e. margin: 20px 40px 500px 100px which would apply each size clockwise starting at the top) OR you can write each side individually (i.e. margin-top: 20px, margin-right: 40px, ...) 
 
 * Margin: auto; will auto center/align the elements (can be margin: 0 auto; which will set the top and bottom to 0 and the left and right to auto) 
+
+<br>
+
+#### USEFUL ATTRIBUTES
+
+`box-sizing: border-box;` <br>
+adding this to your styling of an element will keep the size of the object the same and add any borders, padding etc to the inside of the object (I.e. not adjusting the actual size of the object itself) <br>
+for example: if your object is 50px and you add a border, the border goes to the outside of the object and adds to the size. By adding box-sizing it will not change the size of the object itself, it will add the border (or whatever you add) to the object without adjusting the size. 

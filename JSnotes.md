@@ -6,6 +6,9 @@
 * 'inspect' the page and use the console (developer's tool)
 * docs are saved with ' .js ' 
 
+ES6 is the most up-to-date version of Javascript. One of the many newer additions include the arrow function (=>)
+
+The `debugger` can be used to track the console, step-by-step, in your code. It helps illuminate where you are at in the code, what you are telling the console, and how it is being read. 
 
 <a name="tableOfContents" class="tableOfContents"></a>
 
@@ -80,6 +83,10 @@ Recall the stored value by calling the variable name
 
 > `"hello there " + name` // "hello there Dusty"
 
+<ins>NAMING VARIABLES</ins>
+* Naming variables never has to be short! It is better to be clear/expressive and the name should relate to whatever the variable is doing or will be doing in the result. 
+* avoid naming variables that correspond to HTML elements; think of a good descriptive name that will avoid confusion for others and that doesn't identify as another element. 
+
 <br>
 <ins>VAR vs LET vs CONST</ins><br>
 General Rule: use <strong>const</strong> over <strong>let</strong>, use <strong>let</strong> over <strong>var</strong>, use <strong>var</strong> as little as possible (likely only with legacy code)
@@ -105,6 +112,8 @@ General Rule: use <strong>const</strong> over <strong>let</strong>, use <strong>
 
 ### METHODS
 
+Methods are functions that are properties of an object. There are 2 kinds: Instance Methods (built-in tasks) and Static Methods (tasks called directly on a object constructor) <br>
+
 Adding a function as a property/value of an object 
 
 * `alert()` pops up a message to the user in a pop-up window 
@@ -115,7 +124,7 @@ Adding a function as a property/value of an object
 
 <ins>KEYWORD “THIS” </ins>
 
-A method (`this.`)added to objects in order to access/share pre-defined data. It's a common pattern to organize code: you take data, put it inside an object, then take associated functions and add them as methods to the same object and use the keyword THIS to access the data that was pre-defined 
+A type of method (`this.`) added to objects in order to access/share pre-defined data. It's a common pattern to organize code: you take data, put it inside an object, then take associated functions and add them as methods to the same object and use the keyword THIS to access the data that was pre-defined 
 
 
 <ins><a name="domMethods" class="domMethods">DOM Methods</a></ins> are used to select elements
@@ -310,6 +319,11 @@ Without the return keyword you are getting a 'temporary’ response from the con
 
 		`Var capitalize = function(str) {` <br> 
 		`return str.charAt(0).toUpperCase() + str.slice(1); } `<br>
+
+<ins>NAMING FUNCTIONS</INS> <br>
+It's best practice to use names that will easily read/translate into English (which makes it more developer/reader- friendly and easier to understand when revisited at a later date) 
+
+* If you have `function sumArray(numbers)` (plural, since it relates to an array with mulitple elements) it makes sense to name the `.forEach` elements of that “number” (singular) as it relates to the individual element of the array numbers 
 
 <ins>NAMESPACING</ins>
 You can add a function with the same name if you identify each object of the function in a different way: <br>
@@ -543,6 +557,9 @@ See [DOM Methods](#domMethods) section for more info on DOM Methods
 	`img.setAttribute("src", "odie.png");` <br>
 	//`<img src="odie.png");` 
 
+	`Data- **` attributes: allow storage of extra info on  standard HTML elements w/o hacks of extra properties
+	* `Data-key` is a data attribute that links a key to an identifier (i.e. a number) [see Drum Kit Project in #Javascript30 course]
+
 <ins>EVENTS</ins> 
 
 Events make things interactive (for ex clicking a button, hovering over a link, etc).  
@@ -586,8 +603,9 @@ You can have more than one 'listener' on an element
 The JS Console can be used like a calculator
 * different operations are possible ( + - * / )
 * Order of operations / (PEMDAS) Parenthesis, Exponents, Multiplication, Division, Addition, Subtraction 
+* `+` is used to concatenate and `+=` is used to add (same w other operations)
 
-<ins>Modulo</ins>: also called the remainder operator or Modulus is represented by ' % '
+<ins>Modulo</ins>: also called the remainder operator or Modulus is represented by `%`
 
 * Ex: 10 % 3 will give you 1 
 <br>(it will divide 10 into 3 and then just give you the remainder as the solution)
