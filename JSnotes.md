@@ -579,6 +579,8 @@ You can have more than one 'listener' on an element
 <hr>
 <a name="numbers" class="numbers"></a>
 
+##### Primitive Datatypes Continued...
+
 ### NUMBERS & NUMERIC OPERATIONS
 
 The JS Console can be used like a calculator
@@ -606,6 +608,8 @@ The JS Console can be used like a calculator
 ###### |[Table of Contents](#tableOfContents)| 
 <hr>
 <a name="strings" class="strings"></a>
+
+##### Primitive Datatypes Continued...
 
 ### STRINGS
 
@@ -645,6 +649,8 @@ Single or double quotes are OK (but they must match)
 ###### |[Table of Contents](#tableOfContents)| 
 <hr>
 <a name="boolean" class="boolean"></a>
+
+##### Primitive Datatypes Continued...
 
 ### BOOLEAN
 These statements can be used to combine the initial T/F statement to create more complex statements that also evaluate to T/F 
