@@ -146,6 +146,8 @@ A method (`this.`)added to objects in order to access/share pre-defined data. It
 	calling the variable ‘tags’ will bring all the h1 elements 
 	* Note that using `.querySelectorAll` will give you an Node list
 
+###### |[Table of Contents](#tableOfContents)| 
+
 <hr>
 <a name="conditionals" class="conditionals"></a>
 
