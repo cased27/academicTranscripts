@@ -107,6 +107,7 @@ General Rule: use **const** over **let**, use **let** over **var**, use **var** 
 	* A variable can be reassigned whenever and redeclared at any point 
 	* Initializing with value is optional 
 	* Global variables are added to window 
+	* Scoped within functions
 
 * Let is block scoped 
 	* It can be reassigned but it cannot be redeclared (within a given 'scope')
@@ -121,6 +122,18 @@ General Rule: use **const** over **let**, use **let** over **var**, use **var** 
 		* `const year = 1973;` cannot be reassigned or redeclared like 'let'. `year ++;` is invalid as well as `year = year +10;`
 	* It must be initialized with value 
 	* It does not create a property on the global window object 
+
+<ins>Scopes</ins>
+
+1. Function Scope
+	* the scope within a function
+	* variables (var) are function scoped meaning that if they are declared within a given function they cannot be called outside of the function.
+2. Block Scope 
+	* The scope within a given block; 
+	* 'let' and 'const' are both block scoped variables meaning they are available within the scope where they are declared (within the function, for ex, that they are declared) but not outside of that block
+3. Lexical Scope
+	* the scope of variables within different functions, nested functions, etc.
+	* variables declared within a given function are available to other nested functions but not outside of the given function
 
 ###### |[Table of Contents](#tableOfContents)| 
 <hr>
@@ -497,6 +510,22 @@ Without the return keyword you are getting a 'temporary’ response from the con
 
 	By using a return you are stopping/ ending the execution of a function. i.e. once the return keyword is executed the function will stop running. 
 
+<ins>Functions as Return Values</ins>
+
+```
+function multiplyBy(num) {
+	return function(x){
+		return x * num;
+	}
+}
+
+const triple = multiplyBy(3);
+triple(6)  // 18
+triple(5)  // 15
+```
+
+Here you have a function set as a return value. By setting the function multiply() to a variable you can then call the variable and add a parameter. Above you are setting 'num' to 3 (in the 'const triple') and then calling that function to run the inner function (setting x to 6) and then running through the function
+
 * Syntax to declare a function (there are 2) 
 
 	1. Function Declaration: you have a function, the name of the function, pass in arguments, and pass in the body of the function within the {} brackets 
@@ -531,6 +560,143 @@ var catSpace = { };
 dogSpace.speak( );
 catSpace.speak( );
 ```
+
+<ins>Function Expressions</ins>
+This is another way to write a function where you assign a function to a variable
+
+```
+const sum = function(x, y) {
+	return x + y;
+}
+
+sum(4, 6)
+// 10
+```
+
+you can also do this while naming the function (which may, in some cases, be useful)
+
+```
+const product = function multiply(x, y) {
+	return x * y;
+}
+
+product(3, 5);
+// 15
+```
+
+note that you cannot call the function mulitply() since the console cannot identify it as such. but there may be cases in which naming the function is useful and it's good to know you can do it
+
+<ins>Functions are Objects!</ins>
+
+**Adding objects to functions is how you create a method!**
+
+```
+function add(x, y){
+	return x + y;
+}
+function subtract(x, y){
+	return x - y;
+}
+function multiply(x, y){
+	return x * y;
+}
+function divide(x, y){
+	return x / y;
+}
+
+const operations = [add, subtract, multiply, divide];
+
+operations[1](100, 4)
+// 96
+```
+
+here you are calling index 1 of the const 'operations' (which is 'subtract) and then providing parameters for the function and executing it with those parameters
+
+```
+using the same ex above...
+
+const thing = {
+	doSomething: multiply
+}
+thing.doSomething(50,2)
+
+// 100
+```
+
+Here you have an object calling an object and executing a function. This is how you create a method!
+
+<ins>Functions as Arguments</ins>
+
+```
+function callThreeTimes (f) {
+	f();
+	f();
+	f();
+}
+
+function cry(){
+	console.log(boo hoo);
+}
+
+callThreeTimes(cry)
+
+//boo hoo
+//boo hoo
+//boo hoo
+```
+Here you have a function being run through another function as an argument
+
+<ins>Callback Functions</ins>
+
+Anytime you pass a function within another function it is considered a 'callback function'. It's very common in JS. You can write your own callback function or many methods that are used are callback functions
+
+```
+function grumpy(){
+	alert("UGH GO AWAY")
+}
+
+setTimeout(grumpy, 5000)
+```
+// after 5000 ms you will get the alert in the function grumpy()
+
+```
+setTimeout(function (){
+	alert("HELLO")
+}, 5000)
+
+```
+This is another way to write the same thing as before (/above) but just adding the function directly within the setTimeout()
+
+<ins>Hoisting</ins>
+
+Hoisting concerns the order in which JS runs code. It behaves differently depending on whether you use VAR, LET, or CONST (and is one of the purposes of LET and CONST to avoid these errors/issues)
+
+```
+console.log(animal);
+var animal = 'Cat'
+
+// undefined
+```
+Why 'undefined' and not 'UNCAUGHT type ERROR"? This is because JS is identifying the variable 'animal' as undefined first, then console.logging it, then assigning the variable's value to 'cat'. aka it's 'hoisting' the variable
+
+```
+console.log(animal);
+let animal = 'Cat'
+
+// UNCAUGHT TypeERROR"
+```
+LET is not hoisted like VAR so if you try to console.log it *before* you declare it, it will not work
+
+```
+howl()
+
+function howl(){
+	console.log(AWOOOO);
+}
+
+// AWOOOO
+```
+functions *are* hoisted; so you can call a function before you define that function and it will still run the same. However, if you assign the function to a variable it will work in the same way as the variables did above
 
 ###### |[Table of Contents](#tableOfContents)| 
 
@@ -898,13 +1064,13 @@ You can have more than one 'listener' on an element
 1. `document.getElementById( )` allows you to call an element using it’s ID tag
 
 	```
-	var tag = document.getElementById(“enter ID name here”);
+	var tag = document.getElementById(“jfkIdName”);
 	```
 	calling the variable ‘tag’ will bring up the entire item (whether it’s an `<li>` or other element) that contains the ID of the name entered 
 
 2. `document.getElementsByClassName( )` allows you to call an element using it’s CLASS tag   
 	```
-	var tags = document.getElementByClassName(“enter ClassName here”);
+	var tags = document.getElementByClassName(“xyzClassName”);
 	```
 	calling the variable ‘tags’ will bring up the entire item (whether it’s an `<li>` or other element) that contains the CLASS NAME of the name entered
 	* Note ‘tags’ (plural) because there are more than one 
@@ -912,13 +1078,13 @@ You can have more than one 'listener' on an element
 
 3. `document.getElementsByTagName( )` allows you to call any element with the same tag name   
 	```
-	var tags = document.getElementsByTagName(“enter TagName here”);
+	var tags = document.getElementsByTagName(“abcTagName”);
 	```   
 	calling the variable ‘tags’ will bring up a list (even if there is only one element) of every element with the same tag name (like `<li>, <h1>`) 
 
 4. `document.querySelector( )` returns the first element that matches a given CSS-style selector 
 	```
-	var tag = document.querySelector(“#enter ID name here”);
+	var tag = document.querySelector(“#jfkIdName”);
 	```    
 	calling the variable ‘tag’ will bring up the first item (whether it’s an `<li>` or other element) that contains the ID of the name entered
 	```
@@ -933,7 +1099,7 @@ You can have more than one 'listener' on an element
 	```    
 	calling the variable ‘tags’ will bring all the h1 elements
 	```  
-	var tags = document.querySelectorAll(“.enter ClassName here”);
+	var tags = document.querySelectorAll(“.abcClassName”);
 	```   
 	calling the variable ‘tags’ will bring all the h1 elements 
 	* Note that using `.querySelectorAll` will give you an Node list
