@@ -6,14 +6,9 @@
 * 'inspect' the page and use the console (developer's tool)
 * docs are saved with ' .js ' 
 
-ES6 is the most up-to-date version of Javascript. One of the many newer additions include the arrow function (=>)
+ES6 is the most up-to-date version of Javascript. Find them throughout the notes with the title "ES6 (New JS Feature)"
 
 The `debugger` can be used to track the console, step-by-step, in your code. It helps illuminate where you are at in the code, what you are telling the console, and how it is being read. 
-
-`typeof` (not camelCase) will determine the datatype of whatever is put after it   
-
-* `typeof 99` // number   
-* `typeof mystery` // "string"
 
 REPL 'Read Evaluate Print Loop' is using the console to get immediate evaluation of code (great for testing, not for longer writing of code)
 
@@ -73,7 +68,12 @@ Different categories of data
 	```  
 * UNDEFINED: variables that are declared but not initialized/ defined; it’s a ‘nothing’ value but only because it hasn’t been declared *yet*
 	* `var name;`  OR `var age;`
-	  both undefined; they are declared but no value is assigned (like `var name = “Helen”`) (in the console you'd get ‘undefined’ because they have no value assigned to them) 
+	  both undefined; they are declared but no value is assigned (like `var name = “Helen”`) (in the console you'd get ‘undefined’ because they have no value assigned to them)  
+
+NOTE: using `typeof` (not camelCase) will determine the datatype of whatever is put after it (note: the returned value is always a string)   
+
+* `typeof 99` // "number"   
+* `typeof mystery` // "string"  
 
 ###### |[Table of Contents](#tableOfContents)| 
 <hr>
@@ -135,6 +135,131 @@ General Rule: use **const** over **let**, use **let** over **var**, use **var** 
 	* the scope of variables within different functions, nested functions, etc.
 	* variables declared within a given function are available to other nested functions but not outside of the given function
 
+<ins>ES6 (New JS Feature): **Destructuring**</ins>  
+This is a short, clean syntax to 'unpack' values (from an array) or properties (from an object) into distinct variables
+
+1. Destructuring Arrays
+	```
+	const raceResults = [
+		'Eluid Kipchoge',
+		'Feyisa Lelisa',
+		'Galen Rupp',
+		'Ghirmay Ghebreslassie',
+		'Alphonce Simbu',
+		'Jared Ward'
+	]
+	```
+	Previously the only way to access parts of the array to assign it to a new value was to use it's index (as seen below:).  
+	```
+	const gold = raceResults[0];
+	const silver = raceResults[1];
+	const bronze = raceResults[2];
+	```
+	But now you can use this destructuring like this:
+	```
+	const [gold,silver,bronze] = raceResults
+	```
+	This will access the index of each part of the array and associate it to the same index of `raceResults`. In other words, `[gold]` is at index[0] so it will be connected to index[0] of `raceResults` which has the value of 'Eluid Kipchoge', and so on for index[1] and index[2].  
+
+	You could also add 'spaces' to access different parts of the array as such (no idea whether they are actually from these countries!):
+	```
+	const [Kenyan, , Italian, German, , USA] = raceResults
+	```
+	By writing it in this way it will still apply each value according to it's index but will leave a 'blank' value where there is no value added. However note that it will assign the non-value to that index and move to the next index for the next value:
+	```
+	Kenyan  // 'Eluid Kipchoge'
+	Italian // 'Galen Rupp'
+	German  // 'Ghirmay Ghebreslassie'
+	USA    //'Jared Ward'
+	```
+	You can also use `rest` to contain the elements into a new array:
+	```
+	const [winner, ...losers] = raceResults
+
+	winner // 'Eluid Kipchoge'
+	losers // ['Feyisa Lelisa', 'Galen Rupp', 'Ghirmay Ghebreslassie', 'Alphonce Simbu', 'Jared Ward']
+	```
+
+2. Destructuring Objects  
+Similar to destructuring arrays however instead of destructuring based off the index position it is destructured based off the property name.
+	```
+	const runner = {
+		first: "Eliud",
+		last: "Kipchoge",
+		country: "Kenya",
+		title: "Elder of the Order of the Golden Heart of Kenya"
+	}
+
+	const {first, last} = runner
+
+	first // "Eluid"
+	last // "Kipchoge"
+	```
+	You can also save an existing property to a new name (with just one property or multiple properties):
+	```
+	const {country: nation} = runner
+	const {country: nation, title: honorific}
+
+	nation // "Kenya"
+	honorific // "Elder of the Order of the Golden Heart of Kenya"
+	```
+	Or you can use the `rest` method to group parts of the object into a new array:
+	```
+	const {first, last, ...other} = runner
+
+	other // [
+		country: "Kenya",
+		title: "Elder of the Order of the Golden Heart of Kenya"
+	]
+	```
+
+3. Nested Destructuring  
+You can use destructuring to access properties nested in objs/arrays  
+	```
+	const results = [{
+		first: "Eliud",
+		last: "Kipchoge",
+		country: "Kenya"
+	},
+	{
+		first: "Feyisa",
+		last: "Lilesa",
+		country: "Ethiopia"
+	}]
+
+	const [,{country}] = results
+	// Ethiopia
+	```
+	This will access the second index of the array which is an object and it will access the object with the property name 'country'. Note the beginning comma which is written in as an empty reference to the first index of the array. 
+
+	```
+	const [{first: goldWinner}, {country}] = results
+
+	goldWinner // "Eluid"
+	country // "Ethiopia"
+	```
+
+	The above is renaming the property 'first' to 'goldWinner' and then accessing that property value. Then you also have the 2nd obj with property value of 'country' being accessed
+
+4. Destructuring Parameters (this can be done with objects or arrays)    
+	```
+	const runner = {
+			first: "Eliud",
+			last: "Kipchoge",
+			country: "Kenya",
+			title: "Elder of the Order of the Golden Heart of Kenya"
+		}
+	```
+	You can destructure the parameters themselves as well:
+	```
+	function print({first, last, title}) {
+		console.log(`${first}, ${last}, ${title`})
+	}
+
+	print(runner)
+	// Eliud, Kipchoge, Elder of the Order of the Golden Heart of Kenya
+	```
+
 ###### |[Table of Contents](#tableOfContents)| 
 <hr>
 <a name="methods" class="methods"></a>
@@ -184,6 +309,24 @@ To parse strings into numbers, you can use one of the following:
 
 Note there must always be a number at the beginning of the `()` for example `parseInt('$99')` // NaN but `parseInt(99cents)` // 99 because it cannot start with a symbol or letter etc. only a number
 
+<ins>Map Method</ins>  
+This method is used often to create a new array with the results of calling a callback on every element in the array
+
+	* it will take an array and map them onto a new array 
+	* the new array has to return a value; if nothing is returned it will not work
+
+```
+const numbers = [20, 21, 22, 23, 24, 25, 26, 27];
+
+const doubles = numbers.map(function(num){
+	return num * 2;
+});
+
+doubles
+
+// [40, 42, 44, 46, 48, 50, 52, 54];
+```
+Note in the above example the 'return'. Without the 'return' it will not work (and show 'UNDEFINED')
 
 
 ###### |[Table of Contents](#tableOfContents)| 
@@ -300,6 +443,70 @@ Reads as "in the array 'colors' call each item 'color' and then console.log each
 
 DRY: Don’t Repeat Yourself; always keep your code as DRY as possible for time-saving and clean code 
 
+<ins>ES6 (New JS Feature): **Spread**</ins>  
+MDN: Spread syntax allows an iterable such as an array to be **expanded** in places where 0 + arguments (for func calls) or elements (for array literals) are expected. OR an object expression to be expanded in places where 0 + key-value pairs (for obj literals) are expected 
+* Syntax: using the `...` (triple dots) in the argument
+
+1. Spread for Function Calls  
+This will expand an iterable (array, string, etc) into a list of arguments.  
+If we had the following, we would get a value returned (in this case, the max)  
+	```
+	Math.max(3,4,5,6,7,12,19,99,3)
+	// 99
+	```
+	However, if we had an array of numbers (for ex) and we tried to use that array as the argument, we would not get any returned value because it is not an acceptable type of argument. 
+
+	```
+	const nums = [9, 3, 2, 8];
+	Math.max(nums); // NaN
+	```
+	This is where/why we can use 'spread' to result in:  
+
+	```
+	const nums = [9, 3, 2, 8];
+	Math.max(...nums); // 9
+	```
+
+2. Spread in Array Literals  
+This will create a new array using an existing array. It spreads the elements from one array into the new array
+	```
+	const odds = [1, 3, 5, 7, 9]
+	const evens = [2, 4, 6, 8, 10]
+
+	const allNums = [...odds, ...evens]
+
+	allNums // [1, 3, 5, 7, 9, 2, 4, 6, 8, 10]
+	```
+	* Note that order matters (if you put `const evens` before `const odds` the order of the numbers would be switched)
+	* This is a shorter syntax (and a bit easier to read/see) than using `.concat` (which acheives the same result)
+
+
+3. Spread in Object Literals  
+This will copy properties from one object into another object literal
+	```
+	const canine = {
+		family: 'Caninae',
+		furry: true
+	};
+
+	const dog = {
+		...canine,
+		isPet: true,
+		adorable: true
+	};
+
+	// dog {
+		family: 'Caninae'
+		furry: true,
+		isPet: true,
+		adorable: true
+	};
+	```
+	As you can see in the above ex, the object within `const canine` is added into the new object `const dog` using the spread method  
+	* Note that spread behaves differently with obj literals and array literals. Also with nested arrays/objects
+
+<ins>LOOPS</ins>
+
 1. WHILE LOOPS: repeats code WHILE a condition is True. It's very similar to an IF statement except an IF statement will run the code one time, a WHILE LOOP will repeat a given code block while a condition remains True 
 
 	* Ex: printing numbers 1-5   
@@ -411,8 +618,12 @@ the format always has 3 parts like this: for(initialize; condition; step) { … 
 
 	//UNCAUGHT TYPE ERROR (because it isn't iterable with 'of')
 	```
+5. forEach is an array [method](#method) that will enable you to select individual elements within a function (works similarly to other loops; depends on what you need done in the code as to which one is preferred)
+	* it accepts a callback function
+	* it calls the function once per element in an array
 
-5. loop over an OBJECT (*note the capital 'O' since this is a method). Typically you cannot loop through an object like you would an array. However you can use the following methods in order to loop through Objects (FOR...OF and FOR...IN)  
+
+6. loop over an OBJECT (*note the capital 'O' since this is a method). Typically you cannot loop through an object like you would an array. However you can use the following methods in order to loop through Objects (FOR...OF and FOR...IN)  
 
 	`Object.keys(variable)` is a way to loop over an object and select the 'keys' inside the object  
 	`Object.values(variable)` is a way to loop over an object and select the 'values' inside the object
@@ -586,6 +797,43 @@ product(3, 5);
 
 note that you cannot call the function mulitply() since the console cannot identify it as such. but there may be cases in which naming the function is useful and it's good to know you can do it
 
+<ins>Arrow Functions</ins>  
+The arrow function is a way to condense function codes. See below for the difference in syntax between a regular function and an arrow function
+
+Regular Function Syntax:
+```
+const square = function(x){
+	return x*x
+}
+```
+Arrow Function Syntax:
+```
+const square = (x) => {
+	return x*x
+}
+```
+Note that the parenthesis are optional in an arrow func when there is only one parameter (i.e. 'x' can be with or without parenthesis however if the parameter was (x,y) the parenthesis would be required)
+
+Sometimes there is an *implicit return* when using the arrow function. For example:  
+Normal Arrow Function:
+```
+const square = n => {
+	return n*n
+}
+```
+Implicit Return Arrow Function:  
+```
+const square = n => (
+	n*n
+)
+```
+Sometimes it can be expressed on one line:
+```
+const square = n => (n*n);
+```
+
+Note that the implicit return uses parenthesis instead of curly braces. And there is no return specified (JS will give you the 'squiggly red' error underline to notify you that it is not correct syntax in the implicit return statements)
+
 <ins>Functions are Objects!</ins>
 
 **Adding objects to functions is how you create a method!**
@@ -697,6 +945,64 @@ function howl(){
 // AWOOOO
 ```
 functions *are* hoisted; so you can call a function before you define that function and it will still run the same. However, if you assign the function to a variable it will work in the same way as the variables did above
+
+<ins>ES6 (New JS Feature): **Default Parameters**</ins>  
+This is a new feature of JS in which you can write in the default parameter/ argument in a function (instead of adding a bunch of code as the default if/when someone doesn't add in 2 parameters/arguments)
+
+```
+function mulitply(a, b = 1) {
+	return a*b;
+}
+
+multiply(4)  // 4
+multiply(4,5) // 20
+```  
+In the above example, the default parameter/argument for 'b' is set to 1 directly inside the argument of the function. If no value is set for 'b', it will run the default value of 1 and run the code. If a value is set it will run the code as normal without the default value.  
+* Note that the default parameter/argument is always the second value; this will not work the same if 'a' is set to a default  
+* The default value doesn't have to only be a number; it can be a string, an array, etc.
+* You can add more than one default as well. (but remember JS will always read the code in relation to its defined parameters)
+```
+function multiply(a, b=1, c=' Good Job!') {
+	return a*b + c;
+}
+multiply(5) // "5 Good Job!"
+```
+
+<ins>ES6 (New JS Feature): **REST**</ins>  
+* Despite looking similar to 'Spread', it is different  
+* It allows you to add as many agruments as you'd like in your function. (There is an 'old way' to do this as well but the new way is better)
+* It collects all remaining arguments into an actual array (which is what the 'old way': the 'arguments object' did not do which resulted in a lot of shortcomings)
+
+```
+function someNums(...nums){
+	console.log(nums);
+}
+
+someNums(4,5,6,7)
+// [4,5,6,7]
+```
+In the above ex, the argument in `someNums` (4,5,6,7) is added into a new array creating `[4,5,6,7]`
+
+You can also use it when you have additional/remaining arguments. If you want to have an array with names (including first, last, and any additional names/titles) you could use this method to add in those misc remaining titles:  
+```
+function fullName(first, last, ...titles){
+	console.log('first', first)
+	console.log('last', last)
+	console.log('titles', titles)
+}
+
+fullName('Tom', 'Jones', 'III', 'Jr.');
+// first Tom
+	last Jones
+	titles ['III', 'Jr.']
+```
+As you can see, the extra/unclaimed 'titles' are added to an array at the end.   
+
+Order matters (the `rest` paramenter MUST BE the last parameter). There also cannot be other parameters *after* the `rest` method (for obvious reasons, if `rest` accumulates the rest of the remaining parameters it would not know what to do with extra parameters after that)  
+```
+function fullName(...titles, first, last) // INVALID
+function fullName(first, last, ...titles, ...misc)  // INVALID
+```
 
 ###### |[Table of Contents](#tableOfContents)| 
 
@@ -871,7 +1177,149 @@ animals.splice[3,2]
 let animals = ["shark", "octopus", "salmon", "turtle"]; 
 //your new array has deleted 2 items starting at index 3 and returned the new array
 ```
-10. `.sort` : will sort an array based on the code unit values. the default for words is alphabetical HOWEVER it will not sort numbers in numerical order (it sorts them in based on their code values as strings)
+10. `.sort` : will sort an array based on the code unit values. 
+* Default: `.sort` will convert everything to a string.
+* Words will be sorted alphabetically (by default) HOWEVER it will not sort numbers in numerical order (since they are treated as strings they are sorted based on their string code value (see MDN on number values as strings))
+
+	The general syntax is as follows:
+	```
+	arr.sort(compareFunc(a,b))
+	```
+	* If `compareFunc(a,b)` returns less than 0 (i.e. negative), sort A before B
+	* If `compareFunc(a,b)` returns 0, leave A and B unchanged with respect to each other
+	* If `compareFunc(a,b)` returns greater than 0 (i.e. positive), sort B before A
+
+	```
+	const prices = [400.50, 3000, 99.99, 35.99, 12.00, 9500];
+
+	const badSort = prices.sort();
+	const assendSort = prices.sort((a,b) => a-b);
+
+	badSort // [12, 3000, 35.99, 400.5, 9500, 99.99]
+	assendSort // [12, 35.99, 99.99, 400.5, 3000, 9500]
+	```
+	`badSort` is the default result of using the sort() method with numbers. The numbers are not evaluated numerically (as noted aboeve) but instead converted into strings and compared based on their string values. This doesn't result in any meaningful ordering.
+
+	In order to compare the numbers numerically, you have to do something like what you see in `assendSort`  
+
+	`assendSort` goes through each element in the array and compares them. So it will take '400,5' and subtract it with '3000'. This returns a negative number so it will sort a (in this case '400.5') before b ('3000'). It will take 35.99 (as 'a') and subtract it with 12 (as 'b') and get a positive number. So it will sort 'b' (12) before 'a' (35.99). If the values are equal they will remain the same (the order would not change)
+
+	you could do the following to get a decending order:
+
+	```
+	const decendSort = prices.sort((a,b) => b-a);
+	```
+
+11. `.find` : returns the value of the first element in the array that satisfies the provided testing function. Basically, it's a simple search/find method to look for a specific value and it will stop upon the first match to that value
+	```
+	let movies = [
+		"The Fantastic Mr. Fox",
+		"Mr. and Mrs. Smith",
+		"Mrs. Doubtfire",
+		"Mr. Deeds"
+	]
+	const movie = movies.find(movie => {
+		return movie.inclueds('Mrs.');
+	})
+
+	movie // "Mr. and Mrs. Smith"
+	```
+	* Note that this method is case sensitive 
+	* It will search through the array for the first match to the value "Mrs." and will stop on the second item (index[1])
+
+12. `.filter` : creates a new array with all elements that pass the test implemented by the provided function
+```
+const nums = [34, 35, 67, 54, 109, 102, 32, 9]
+
+const odds = nums.filter(n => n % 2 === 1);
+const evens = nums.filter(n => n % 2 === 0);
+
+odds // [35, 67,109, 9]
+evens // [34, 54, 102, 32]
+```
+
+13. `.every` & `.some` : these are boolean methods (return either TRUE or FALSE)
+	* `.every` tests whether all elements in the array pass the provided function
+
+	```
+	const words = ["dogs", "dig", "log", "bag", "way"]
+
+	const allWords = words.every(word => word.length === 3)
+
+	allWords // true;
+	```
+	this will return 'true' only if ALL the values match the test (in this case all the values have a word length of 3 so it is true)
+
+	* `.some` tests whether any elements in the array pass the provided function
+	```
+	const words = ["dog", "jello", "log", "cupcake", "bag", "wag"]
+
+	const anyWords = words.some(word => word.length > 4);
+
+	anyWords // true;
+	```
+	this will return 'true' if ANY (i.e. some) of the values match the test (in this case there are various words with a length less than 4 so it is true)
+
+14. `.reduce` executes a reducer function on each element of the array resulting in a single value (for example, summing, finding a max value, tallying data or results)  
+
+	<ins>Finding the SUM or PRODUCT using `.reduce()`
+	```
+	[3, 5, 7, 9, 11].reduce((accumulator, currentValue) => {
+		return accumulator + currentValue;
+	})
+	```
+
+	the reduce() method above will go through each value of the array, store the accumulated value, and then use that accumulated value to continue through the array. If there is no initial value the first value of the array will be used as the first value/ accumulator. It looks like this (using the above as the example):
+
+	 | Callback    | Accumulator | currentValue | Return Value |
+	 |-------------|:-----------:|:------------:|:------------:|
+	 | First call  |      3      |      5       |      8       |
+	 | Second call |      8      |      7       |      15      |
+	 | Thrid call  |     15      |      9       |      24      |
+	 | Fourth call |     24      |      11      |      35      |
+
+	If you wanted to get the product of the values (instead of the sum, as seen above) you could write the code like this:
+	```
+	[3, 5, 7, 9, 11].reduce((accumulator, currentValue) => {
+		return accumulator * currentValue;
+	})
+	```
+	<ins>Finding a MAX VALUE using `reduce()`</ins>
+	```
+	const grades = [87, 64, 96, 92, 88, 99, 73, 70, 64]
+
+	const maxGrade = grades.reduce((max, currVal) => {
+		if(currVal > max) return currVal;
+		return max;
+	})
+	```
+	Running through the array would look like this where you have each value being compared to each other and the higher value is returned and compared to the next value in the array
+
+	 | Callback    | Accumulator | currentValue | Return Value |
+	 |-------------|:-----------:|:------------:|:------------:|
+	 | First call  |      87      |      64       |      87       |
+	 | Second call |      87      |      96       |      96      |
+	 | Thrid call  |     96      |      92       |      96      |
+
+	This will continue through the entire array until it discovers that '99' is the max value
+
+	<ins>TALLYING using `.reduce()`</ins>  
+	Using reduce in this way will use an object
+
+	```
+	const votes = ['y', 'y', 'n', 'y', 'n','y','n','y','n','n','n','y','y',]
+
+	const tallyVotes = votes.reduce((tally, currentVote) => {
+		tally[currentVote] = (tally[currentVote] || 0) + 1;
+		return tally;
+	}, {});
+
+	//Note that the {} empty curly braces at the end is the initial value
+
+	tally // {y: 7, n:6}
+	```
+	the above reads: the constant 'tallyVotes' will take two parameters 'tally' and 'currentVote' and run them through the code. If tally of currentVote does not exist (i.e. the first time the code is run through the value is set to an empty object) it will set the values to their current values OR set them to 0 and then it will add one. So when you run through the first time you get your first 'y' and it will be set to the current value OR 0 (which are both 0 anyway) and then add one resulting in {y:1}. The next round through there is another 'y'. So you have y[1] = y[1] or 0, which is one, then you add 1, resulting in {y: 2}
+
 
 <ins>Combining Arrays with Concat</ins>  
 
