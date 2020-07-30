@@ -278,7 +278,11 @@ Adding a function as a property/value of an object
 
 <ins>KEYWORD “THIS” </ins>
 
-A type of method (`this.`) added to objects in order to access/share pre-defined data. It's a common pattern to organize code: you take data, put it inside an object, then take associated functions and add them as methods to the same object and use the keyword THIS to access the data that was pre-defined 
+A type of method (`this.`) added to objects in order to access/share pre-defined data. It is an object. It's a common pattern to organize code: you take data, put it inside an object, then take associated functions and add them as methods to the same object and use the keyword THIS to access the data that was pre-defined.  
+
+The value of `this` is different depending on where it is in the code. It may refer to the global window or it may be references inside a function causing it to have a different value.  
+
+Note: If you use an `=>` (arrow function) it will refer the `this` to the global window or the parent function/window which can help allow you to access the desired scope and information
 
 [DOM Methods](#domMethods)
 
@@ -286,7 +290,39 @@ A type of method (`this.`) added to objects in order to access/share pre-defined
 
 [Array Methods](#arrayMethods)
 
-<ins>Math Object Methods</ins>
+<ins>Adding Methods to Objects</ins>  
+You can add your own method to any object using the 'dot' notation  
+
+```
+const math = {
+	numbers: [1, 2, 3, 4, 5],
+	add: function(x,y) {
+		return x+y
+	},
+	multiply: function(x,y) {
+		return x*y
+	}
+}
+
+math.add(5,6) // 11
+math.multiply(6,7)  // 42
+```
+
+There is an updated newer/shorter syntax for the above that avoids having to do the 'key'-'value' syntax:
+
+```
+const math = {
+	numbers: [1, 2, 3, 4, 5],
+	add(x,y) {
+		return x+y
+	},
+	multiply(x,y) {
+		return x*y
+	}
+}
+```
+
+<ins>**Math** Object Methods</ins>
 
 A built-in object that has properties and methods for mathematical constants and functions; it works with the Number type (*must be capital 'M')
 
@@ -1539,7 +1575,7 @@ You can have more than one 'listener' on an element
 	var tags = document.getElementByClassName(“.xyzClassName”);
 	```
 	calling the variable ‘tags’ will bring up the first item (whether it’s an `<li>` or other element) that contains the CLASS NAME of the name entered
-	* Note that using `.querySelector` will result in an array 
+	* Note that using `.querySelector` will result in an HTML element 
 
 5. `document.querySelectorAll( )` returns all the elements that match a given CSS-style selector   
 	```
