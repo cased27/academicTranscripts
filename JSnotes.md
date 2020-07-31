@@ -1452,7 +1452,7 @@ Var person = {
 
 ### DOM
 
-Document Object Model is the interface between Javascript and HTML + CSS 
+**Document Object Model** is the interface between Javascript & HTML + CSS 
 
 * *Select* an element and then *manipulate*  
 Ex: select `h1` and then manipulate (change color from black to pink)
@@ -1460,56 +1460,249 @@ Ex: select `h1` and then manipulate (change color from black to pink)
 var h1 = document.querySelector(“h1”)   
 h1.style.color = “pink”; 
 ```
-<ins>MANIPULATION</ins> 
+
+<a name="domMethods" class="domMethods"></a>
+
+<ins>DOM Methods</ins> are used to select elements. I've separated these very useful list of DOM methods into sections: (A) [Selecting Elements](#selectingElements) (B) [Manipulation](#manipulation) (C) [Changing/ Removing/ Adding Elements](#changingElements).  
+
+<a name="selectingElements" class="selectingElements"></a>
+A. <ins>SELECTING ELEMENTS</ins>  
+
+`document.getElementById( )` allows you to call an element using it’s ID tag
+```
+var tag = document.getElementById(“jfkIdName”);
+```
+calling the variable ‘tag’ will bring up the entire item (whether it’s an `<li>` or other element) that contains the ID of the name entered 
+
+`document.getElementsByClassName( )` allows you to call an element using it’s CLASS tag   
+```
+var tags = document.getElementByClassName(“xyzClassName”);
+```
+calling the variable ‘tags’ will bring up the entire item (whether it’s an `<li>` or other element) that contains the CLASS NAME of the name entered
+* Note ‘tags’ (plural) because there are more than one 
+* You cannot use .forEach here because this is a list, not an array  
+
+`document.getElementsByTagName( )` allows you to call any element with the same tag name   
+```
+var tags = document.getElementsByTagName(“abcTagName”);
+```   
+calling the variable ‘tags’ will bring up a list (even if there is only one element) of every element with the same tag name (like `<li>, <h1>`) 
+
+`document.querySelector( )` returns the first element that matches a given CSS-style selector 
+```
+var tag = document.querySelector(“#jfkIdName”);
+```    
+calling the variable ‘tag’ will bring up the first item (whether it’s an `<li>` or other element) that contains the ID of the name entered
+```
+var tags = document.getElementByClassName(“.xyzClassName”);
+```
+calling the variable ‘tags’ will bring up the first item (whether it’s an `<li>` or other element) that contains the CLASS NAME of the name entered
+* Note that using `.querySelector` will result in an HTML element 
+
+`document.querySelectorAll( )` returns all elements that match a given CSS-style selector   
+```
+var tags = document.querySelectorAll(“h1”);
+```    
+calling the variable ‘tags’ will bring all the h1 elements
+```  
+var tags = document.querySelectorAll(“.abcClassName”);
+```   
+calling the variable ‘tags’ will bring all the h1 elements 
+* Note that using `.querySelectorAll` will give you an Node list  
+<br>
+
+<a name="manipulation" class="manipulation"></a>
+B. <ins>MANIPULATION</ins> 
 
 1. Style: you can use the style property to manipulate an element's style 
-	- Separation of Concerns: it's recommended for styles to be defined in a separate file(s). The style property allows for quick styling, for example for testing purposes 
-	- There are 3 basic parts to a webpage: Structure, Behavior, Presentation. They overlap slightly in some areas but it is a generally accepted rule that each part is responsible for it's own contribution to the page (i.e. CSS is for styling, HTML is for stucture/ skeleton, Javascript is for function (VERB). 
+	* Separation of Concerns: it's recommended for styles to be defined in a separate file(s). The style property allows for quick styling, for example for testing purposes 
+	* There are 3 basic parts to a webpage: **Structure, Behavior, Presentation**. They overlap slightly in some areas but it is a generally accepted rule that each part is responsible for it's own contribution to the page (i.e. CSS is for styling, HTML is for stucture/ skeleton, Javascript is for function (VERB). 
 		```
 		var tag = document.getElementBy Id("highlight");    
 		tag.style.color = "blue";    
 		tag.style.border = "10px solid black";    
 		```
+	`getComputedStyle` is a method that can return an object containing the CSS style components and properties of an element (that can come from JS or the CSS style sheet, etc)
+	* you can retrieve the style information and/or change it 
+	* it is a great way to understand what is happening on the page as far as style goes
+
+	`.classList` will allow us to access the classes and do something with it
+	* `classList.remove` will remove any specified class  
+	* `classList.add` will add any specified class  
+	* `classList.toggle` will toggle (appear and disappear / add and remove) a class. (i.e. if it has the class, remove it. If it doesn't have the class, add it)  
+
 2. Text & Content:  
-	* textContent: returns a string of all the text contained in a given element
-		```   
-		<p>Hello <strong>World</strong></p>
+You can access text or content and/or change that text through the DOM
 
-		var tag = document.querySelector("p");
+* `textContent`: returns a string of ALL text contained in a given element. It will maintain the formatting (spacing, etc) but not specific tags within.
 
-		tag.textContent    
-		//"Hello World" 
-		```   
-		*note it only returns the content, not the `<strong>` tag inside   
-		```
-		tag.textContent = "blahblahblah"  
-		//this will change the <p> to "blahblahblah"
-		```
- 	* Be careful overwriting with `.textContent` because it will change/ remove parts inside the content (i.e. in the above ex if you wrote "Goodbye World" it would also remove the `<strong>` tag) 
+* `innerText`: will select all the text inside of the selected element (just like `textContent`) but will not maintain formatting (like spacing) and will remove tags, etc (just the text)
 
- 	* **use `.innerHTML`** as an alternative option to be able to select more specific tags. It will return everything as a string including the inside HTML elements 
+	```   
+	<p>Hello <strong>World</strong></p>
+	var tag = document.querySelector("p");
 
-	* You can write HTML (with tags etc) with .innerHTML and it will show on the page like normal HTML. However `.textContent` will not; it reads everything literally and does not read an `<h1>` tag (for ex) as an `<h1>`… 
+	tag.textContent    
+	//"Hello World" 
 
-3. Attributes: 
+	tag.innerText
+	//"Hello World"
+	```   
+	note it only returns the content, not the `<strong>` tag inside (it will change/ remove parts inside the content) 
+
+	The below example shows the main difference between the two. If we had the following `<p>` element  
+
+	```
+	<p id="special"> Lorem ipsum dolor sit amet, 
 	
-	`.getAttribute( );`   
-	`.setAttribute( );` 
+	consectetur adipiscing elit. 
+
+	Maecenas dapibus orci 
+	convallis 
+	libero pharetra, gravida pharetra dolor fermentum. 
+	
+	pellentesque. Nam dapibus molestie nunc 
+	<script> console.log("Hello")</script></p>
 	```
-	var link = document.querySelector("a");
+	we would get two different results depending on whether we used `textContent` or `innerText`:
 
-	link.getAttribute("href");     //"www.google.com" 
-	link.setAttribute("href", www.dogs.com);
-
-	//<a href = www.dogs.com> I am a link</a> 
-
-	var img = document.querySelector("img");    
-	img.setAttribute("src", "odie.png");
-
-	//<img src="odie.png">; 
 	```
-	`Data- **` attributes: allow storage of extra info on  standard HTML elements w/o hacks of extra properties
-	* `Data-key` is a data attribute that links a key to an identifier (i.e. a number) [see Drum Kit Project in #Javascript30 course]
+	const p = document.querySelector('#special')
+
+	p.innerText
+	//Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dapibus orci convallis libero pharetra, gravida pharetra dolor fermentum. pellentesque. Nam dapibus molestie nunc
+
+	p.textContent
+	// "Lorem ipsum dolor sit amet, 
+	
+	consectetur adipiscing elit. 
+
+	Maecenas dapibus orci 
+	convallis 
+	libero pharetra, gravida pharetra dolor fermentum. 
+	
+	pellentesque. Nam dapibus molestie nunc 
+	console.log("Hello")
+	"
+	```
+* `.innerHTML`: returns everything as a string including the inside HTML elements and tags. You can add a tag and text directly into the HTML using this tag as well. 
+	* when adding text (for ex) `innerHTML` is able to read tags and code for what they are (i.e. a `<strong> This is a bold tag</strong>` will appear as a bold text if innerHTML is used but innerText will simply literally write out that text, including the `<strong>` tags because it doesn't recognize them as tags) 
+
+<br>
+
+<a name="changingElements" class="changingElements"></a>
+
+C. <ins>CHANGING / ADDING / REMOVING ELEMENTS: (parents, children, siblings)</ins>  
+
+`createElement` will create a new HTML element
+```
+const newh2 = document.createElement('h2')
+
+//a new (empty) <h2>M/h2> element will be created
+// you can select and edit/add to that new element too
+
+newh2.innerHTML = "I <b>love</b> animals"
+
+// <h2>I <b>love</b> animals</h2>
+```
+
+`.getAttribute( );` this will retrieve the given element  
+`.setAttribute( );` this can take two arguments. the first is the selected class and the second is the desired replacement/edit (note that if you use this to replace a class it will remove the first/original class, not just add it in)
+```
+var link = document.querySelector("a");
+
+link.getAttribute("href");     //"www.google.com" 
+link.setAttribute("href", www.dogs.com);
+
+//<a href = www.dogs.com> I am a link</a> 
+
+var img = document.querySelector("img");    
+img.setAttribute("src", "odie.png");
+
+//<img src="odie.png">; 
+```
+`Data- **` attributes: allow storage of extra info on  standard HTML elements w/o hacks of extra properties
+* `Data-key` is a data attribute that links a key to an identifier (i.e. a number) [see Drum Kit Project in #Javascript30 course]
+
+`.appendChild()` is used to add an element the child of the selected element. (to continue with the above example for 'createElement'...)  
+```
+h1.appendChild(newh2)
+```
+this will add the newh2 element as a child to the h1 element on the page. Note it will add the child to the end of whatever section it is added to (if there are multiple child elements it will be the last child element in that section) 
+
+`.append` can insert multiple elements at once (unlike `.appendChild`) and add them to the end of the given/selected element
+```
+firstP.append(i,newLi)
+```
+
+`.prepend` similiar to `.append` but it will add the elements to the beginning of the selected element
+
+`.removeChild` will remove the child of any specified parent (the parent has to be the parent of the selected child, of course)
+```
+ul.removeChild(li)
+```
+
+`.remove` works the same as `.removeChild` except it does not require a parent element to be specified;
+```
+h1.remove()
+```
+
+`.insertBefore` will add a new element to the page before the selected element. You must have the parent element identified in order to make this work properly. 
+```
+parentUl.insertBefore(newLi, firstLi)
+
+//this will insert the newLi within the parent element 'parentUl' before the second paramenter (firstLi)
+```
+`.insertAdjacentElement` (similar to `.insertBefore`) takes 2 arguments (including a specified 'position') with the following sytax:
+```
+targetElement.insertAdjacentElement(position, element);
+
+li.insertAdjacentElement('beforebegin', ul)
+```
+* the possible positions are: 
+	* 'beforebegin': before targetElement itself 
+	* 'afterbegin': inside targetElement, before 1st child 
+	* 'beforeend': inside targetelement, after last child 
+	* 'afterend': after targetElement itself
+
+`.parentElement` will target the 'parent' of any element that you specify (i.e. whatever the selected element is inside of).  
+Below you can see by requesting the parentElement of the `<li>` you get the `<ul>`. And so on, you can request the parentElement and it will retrieve the parent of whatever requested (until there are no more requested/available, i.e. after `<html>` there are no more elements to select and it would result in `null`)
+```
+const elementLi = document.querySelector('li')
+
+elementLi.parentElement
+// <ul>...</ul>
+
+elemntLi.parentElement.parentElement.parentElement
+//<html>
+	<head>...</head>
+	<body>...</body>
+</html>
+```
+`.children` will select the children of any given element selected (i.e. whatever is inside of the given element). In other words, it looks inside the given element or downwards (instead of upwards in the case of `parentElement`).  
+Using the above example,
+```
+const elementUl = document.querySelector('ul')
+
+elementUl.children
+// <li>...</li>
+```
+`.nextElementSibling` will target the next/immediately-following 'sibling' of any given element (i.e. the next element on the same 'level' as the given element)
+```
+const elementLi = document.querySelector('li')
+
+elementLi.nextElementSibling
+// <li>Second Li</li>
+```
+`.previousElementSibling` will target the previous 'sibling' of any given element
+```
+const elementLi = document.querySelector('li')
+const thirdLi = elementLi.nextElementSibling.nextElementSibling
+
+thirdLi.previousElementSibling
+// <li>Second Li</li>
+```
+
 
 <ins>EVENTS</ins> 
 
@@ -1542,51 +1735,6 @@ button.addEventListener("click", function() {
 ```
 You can have more than one 'listener' on an element 
 
-<a name="domMethods" class="domMethods"></a>
-
-<ins>DOM Methods</ins> are used to select elements
-1. `document.getElementById( )` allows you to call an element using it’s ID tag
-
-	```
-	var tag = document.getElementById(“jfkIdName”);
-	```
-	calling the variable ‘tag’ will bring up the entire item (whether it’s an `<li>` or other element) that contains the ID of the name entered 
-
-2. `document.getElementsByClassName( )` allows you to call an element using it’s CLASS tag   
-	```
-	var tags = document.getElementByClassName(“xyzClassName”);
-	```
-	calling the variable ‘tags’ will bring up the entire item (whether it’s an `<li>` or other element) that contains the CLASS NAME of the name entered
-	* Note ‘tags’ (plural) because there are more than one 
-	* You cannot use .forEach here because this is a list, not an array  
-
-3. `document.getElementsByTagName( )` allows you to call any element with the same tag name   
-	```
-	var tags = document.getElementsByTagName(“abcTagName”);
-	```   
-	calling the variable ‘tags’ will bring up a list (even if there is only one element) of every element with the same tag name (like `<li>, <h1>`) 
-
-4. `document.querySelector( )` returns the first element that matches a given CSS-style selector 
-	```
-	var tag = document.querySelector(“#jfkIdName”);
-	```    
-	calling the variable ‘tag’ will bring up the first item (whether it’s an `<li>` or other element) that contains the ID of the name entered
-	```
-	var tags = document.getElementByClassName(“.xyzClassName”);
-	```
-	calling the variable ‘tags’ will bring up the first item (whether it’s an `<li>` or other element) that contains the CLASS NAME of the name entered
-	* Note that using `.querySelector` will result in an HTML element 
-
-5. `document.querySelectorAll( )` returns all the elements that match a given CSS-style selector   
-	```
-	var tags = document.querySelectorAll(“h1”);
-	```    
-	calling the variable ‘tags’ will bring all the h1 elements
-	```  
-	var tags = document.querySelectorAll(“.abcClassName”);
-	```   
-	calling the variable ‘tags’ will bring all the h1 elements 
-	* Note that using `.querySelectorAll` will give you an Node list
 
 ###### |[Table of Contents](#tableOfContents)| 
 
