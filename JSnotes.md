@@ -465,7 +465,7 @@ Loops are a way to condense code that is doing the same thing over and over agai
 
 <ins>ITERATION</ins> (commonly seen in pages w comments): using loops and forEach to iterate over an array (*note that objects ARE NOT iterable)  
 
-* ForEach: `arr.forEach(someFunciton)` 
+* ForEach: `arr.forEach(someFunction)` 
 ```
 var colors = [“red”, “orange”, “yellow”, “green”];
 
@@ -1488,7 +1488,7 @@ var tags = document.getElementsByTagName(“abcTagName”);
 ```   
 calling the variable ‘tags’ will bring up a list (even if there is only one element) of every element with the same tag name (like `<li>, <h1>`) 
 
-`document.querySelector( )` returns the first element that matches a given CSS-style selector 
+`document.querySelector( )` returns the *first* element that matches a given CSS-style selector 
 ```
 var tag = document.querySelector(“#jfkIdName”);
 ```    
@@ -1522,7 +1522,7 @@ B. <ins>MANIPULATION</ins>
 		tag.style.color = "blue";    
 		tag.style.border = "10px solid black";    
 		```
-	`getComputedStyle` is a method that can return an object containing the CSS style components and properties of an element (that can come from JS or the CSS style sheet, etc)
+	`.getComputedStyle` is a method that can return an object containing the CSS style components and properties of an element (that can come from JS or the CSS style sheet, etc)
 	* you can retrieve the style information and/or change it 
 	* it is a great way to understand what is happening on the page as far as style goes
 
@@ -1534,9 +1534,9 @@ B. <ins>MANIPULATION</ins>
 2. Text & Content:  
 You can access text or content and/or change that text through the DOM
 
-* `textContent`: returns a string of ALL text contained in a given element. It will maintain the formatting (spacing, etc) but not specific tags within.
+* `.textContent`: returns a string of ALL text contained in a given element. It will maintain the formatting (spacing, etc) but not specific tags within.
 
-* `innerText`: will select all the text inside of the selected element (just like `textContent`) but will not maintain formatting (like spacing) and will remove tags, etc (just the text)
+* `.innerText`: will select all the text inside of the selected element (just like `textContent`) but will not maintain formatting (like spacing) and will remove tags, etc (just the text)
 
 	```   
 	<p>Hello <strong>World</strong></p>
@@ -1598,7 +1598,7 @@ C. <ins>CHANGING / ADDING / REMOVING ELEMENTS: (parents, children, siblings)</in
 ```
 const newh2 = document.createElement('h2')
 
-//a new (empty) <h2>M/h2> element will be created
+//a new (empty) <h2></h2> element will be created
 // you can select and edit/add to that new element too
 
 newh2.innerHTML = "I <b>love</b> animals"
