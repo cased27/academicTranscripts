@@ -1,6 +1,7 @@
 # JAVASCRIPT
 
 * JS is the 'verb' of a webpage 
+* JS is single threaded. This means that only one thing at a time is running and it finishes (in other words, at any given point in time JS is running at most one line of JS code)
 * comment out using `//` (double slash)
 * clear the console using the function `clear()`
 * 'inspect' the page and use the console (developer's tool)
@@ -30,6 +31,7 @@ There are a lot of notes on JS! Click any of the links below to jump to any part
 - [Arrays](#arrays)
 - [Objects](#objects)
 - [DOM](#dom)
+- [Call Stack](#callStack)
 
 <hr>
 <a name="getStarted" class="getStarted"></a>
@@ -1488,7 +1490,7 @@ var tags = document.getElementsByTagName(“abcTagName”);
 ```   
 calling the variable ‘tags’ will bring up a list (even if there is only one element) of every element with the same tag name (like `<li>, <h1>`) 
 
-`document.querySelector( )` returns the *first* element that matches a given CSS-style selector 
+`document.querySelector( )` returns the *first* element that matches a node (or CSS-style selector). Note it only selects a single element
 ```
 var tag = document.querySelector(“#jfkIdName”);
 ```    
@@ -1499,7 +1501,7 @@ var tags = document.getElementByClassName(“.xyzClassName”);
 calling the variable ‘tags’ will bring up the first item (whether it’s an `<li>` or other element) that contains the CLASS NAME of the name entered
 * Note that using `.querySelector` will result in an HTML element 
 
-`document.querySelectorAll( )` returns all elements that match a given CSS-style selector   
+`document.querySelectorAll( )` returns a *collection* (or node list) containing all matching element nodes (using CSS-style selectors)    
 ```
 var tags = document.querySelectorAll(“h1”);
 ```    
@@ -1508,7 +1510,7 @@ calling the variable ‘tags’ will bring all the h1 elements
 var tags = document.querySelectorAll(“.abcClassName”);
 ```   
 calling the variable ‘tags’ will bring all the h1 elements 
-* Note that using `.querySelectorAll` will give you an Node list  
+* Note that using `.querySelectorAll` will give you an Node list unlike the other methods which return HTML Collections
 <br>
 
 <a name="manipulation" class="manipulation"></a>
@@ -1733,7 +1735,20 @@ button.addEventListener("click", function() {
 	paragraph.textContent = "Someone clicked the button!"; 
 	});   
 ```
-You can have more than one 'listener' on an element 
+You can have more than one 'listener' on an element.
+Note: it is useful to to the keyword 'this' to separate functions and connect click listeners (see Colt's JS course in Section15 "The Event Object") 
+
+KEY EVENTS
+
+1. Keypress: pressing a key down and releasing
+
+2. Keyup: any key that is released after being pressed down. 
+
+3. Keydown: any key that is pressed down (on each, original key down) it will be logged in the console.  
+
+FORM EVENTS	
+(Colt's JS course Section 15 "Form Events & PreventDefault)  
+
 
 
 ###### |[Table of Contents](#tableOfContents)| 
@@ -1970,3 +1985,35 @@ These statements can be used to combine the initial T/F statement to create more
 ###### |[Table of Contents](#tableOfContents)| 
 ###### |[Return to Primitive Datatypes](#pDatatypes)|
 <hr>
+
+<a name="callStack" class="callStack"></a>
+
+### CALL STACK	
+The call stack is the mechanism in the JS interpreter uses to keep track of its place in a script that calls multiple functions. It is how JS 'knows' what functino is currently being run and what functions are called from within that function etc
+* 'call' refers to function calls (which func are being called or have been called, etc)
+* 'stack' is a data structure term similar to a stack of books or plates where the last, most recent thing added to the stack, or pile, is what will be retrieved first.
+* How it Works:
+	* when a script calls a function, the interpreter adds it to the call stack and then starts carrying out the function.
+	* any functions that are called by that function are added to the call stack further up, and run where their calls are reached
+	* when the current function is finished, the interpreter takes it off the stack and resumes execution where it left off in the last code listing
+
+
+<ins>Debugging</ins>
+* debugging is useful to breakdown the call stack and identify problem areas within your code, step by step.
+* The Process:
+	* in the console, go to the 'source' tab while in the desired page you want to debug (JS in this case).
+	* you can click on any of the numbered rows (to the left of the code) to select a 'breakpoint' where you would like the code to stop/pause
+	* then on the right-hand side you have a 'debugger menu' where you can move forward, step by step, to watch how the functions are being called thru the call stack, etc  
+
+<ins>Asynchronous Callbacks</ins>  
+
+* JS is single threaded (so it only works on one thing at a time before moving on to the next task/code)
+* How can we work around this potential 'problem'? How do you get your code to continue in JS or get JS to 'multitask'? The workaround is the browser
+	* for ex: if you had a delay timer of 3 seconds, and JS only works on one line at a time, how do you get the code to continue or have JS monitor the timing AND get the next code out (so your app or page doesn't freeze until the timer is finished)?  
+	simple answer: it's the *browser*!
+* The Brower:
+	* browers come with Web APIs that are able to handle certain tasks int eh background (like making requests or setTimeouts)
+	* the JS call stack recognizes these Web API functions and passes them off to the brower to take care of 
+	* Once the brower finishes those tasks they return and are pushed onto the stack as a callback  
+
+<ins>Promises</ins>
