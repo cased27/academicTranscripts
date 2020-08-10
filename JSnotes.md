@@ -32,6 +32,7 @@ There are a lot of notes on JS! Click any of the links below to jump to any part
 - [Objects](#objects)
 - [DOM](#dom)
 - [Call Stack](#callStack)
+- [HTTP Requests](#requests)
 
 <hr>
 <a name="getStarted" class="getStarted"></a>
@@ -758,6 +759,22 @@ Without the return keyword you are getting a 'temporary’ response from the con
 	In this case the function of square was recalled in the variable, the numbers computed (i.e. the square of 104), and stored in the variable called “result”; Result now stores the value of 10816 
 
 	By using a return you are stopping/ ending the execution of a function. i.e. once the return keyword is executed the function will stop running. 
+
+<a class="keywords" name="keywords"></a>
+
+<ins>Async Keyword</ins>  
+
+* Find out more in Colt's JS course Chapter 18
+* async functions always return a Promise
+* If the function returns a value, the Promise will be resolved with that value
+* if the function throws an exception, the Promis will be rejected
+* note that requests can be parallel or sequential (which will effect the timing in which they are executed. Sometimes it will not be notable as far as something showing up, but behind the scenes they are happening at very different times)
+
+<ins>Await Keyword</ins>  
+
+* Find out more in Colt's JS course Chapter 18
+* the await keyword can only be used *inside* an async function
+* await will pause the execution of the function, waiting for a promise to be resolved
 
 <ins>Functions as Return Values</ins>
 
@@ -2016,4 +2033,76 @@ The call stack is the mechanism in the JS interpreter uses to keep track of its 
 	* the JS call stack recognizes these Web API functions and passes them off to the brower to take care of 
 	* Once the brower finishes those tasks they return and are pushed onto the stack as a callback  
 
-<ins>Promises</ins>
+<ins>Promises</ins>  
+(Section 16 in Colt's JS Course)  
+A pattern for writing async code; it's an object representing the eventual completion or failure of an asynchronous operation.  
+Basic syntax example:
+```
+const newDog = new Promise((resolve, reject) => {
+	const rand = Math.random();
+	if(rand < .5) {
+		resolve();
+	} else {
+		reject()
+	}
+})
+newDog.then( => {
+	console.log('Yeah! We got a dog!');
+})
+newDog.catch( => {
+	console.log('Oh no! We don't get a dog!');
+})
+```
+* a Promise (capital 'P') has a status of 'resolved' or 'rejected' (and if neither is chosen it has a status of 'pending').
+* the `.then` of a Promise will run when the Promise is 'true' or 'resolved'
+* the `.catch` will run when the Promise is 'false' or 'rejected'  
+* Note: you can chain Promises together which helps keep the code DRY
+
+`Promise.all` returns a Promise which is stored in an array of individual Promises  
+* it helps to keep your code DRY
+* the Promise.all will only run once all the other Promises have run
+
+<hr>
+
+<a name="requests" class="requests"></a>
+
+### HTTP Requests
+
+(Find more info in Colt's JS course Section 17) 
+
+<ins>AJAX</ins> : Asynchronous Javascript and XML  
+* XML is the original notation to send requests via JS (not as widely used nowadays)  
+* it doesn't support promises (so lots of callbacks)
+* note the capitalization rules (XMLHttpRequests) and clunky/lengthy syntax (difficult to remember)
+* Read more on [MDN](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest) 
+
+```
+const firstReq = new XMLHttpRequest();
+firstReq.addEventListener('load', function() {
+	console.log('it worked!);
+	const data = JSON.parse(this.responseText);
+	console.log(data);
+});
+firstReq.addEventListener('error', () => {
+	console.log('error!);
+});
+firstReq.open('GET', 'https://www.google.com');
+firstReq.send();
+console.log('Request Sent!');
+```
+
+* Fetch API (it's a method)
+	* this is the newer way to make requests via JS
+	* it supports Promises
+	* since it's newer, it's not supported by some browsers
+	* fetches can be chained together
+	* it takes one mandatory argument (the path to the resource you want to fetch). It returns a Promise that resolves to the Response to that request, whether it is successful or not. you can also optionally pass in an init options object as the second argument. Read more at [MDN](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)  
+* Axios
+	* this is an external library (so it has to be added to your documents to be able to access it)
+	* it's an even easier way than fetch (in a lot of ways) to make requests
+
+<ins>AJAJ</ins>: Asynchronous Javascript and JSON (JS Object Notation)  
+* JSON is another notation (it looks a lot like JS but it's not actually JS; however it is easy to translate between the two)  
+
+Using `async` and `await` [keywords](#keywords) with Requests (find more info on these keywords in the 'Functions' section of this document)
+
