@@ -47,6 +47,32 @@ IDE: (Integrated Development Environment / Code Editor) communicate commands to 
 	* If it’s in the `<head>` below `<title>` in the HTML doc all JS will load first, then HTML 
 	* If it’s in the `<body>` below all the text then the HTML will load first, then JS
 
+**Additional JS pages: How to link them (VS Code)**  
+* If you want to separate your JS code and use two different documents for all the info, you can use separate documents that are linked via 'import' and 'export'  
+
+Part I (in your documents)  
+* in your HTML document, add a `type="module"` to the script tag:
+```
+<script src="docTitle.js" type="module"></script>
+```  
+* in your primary JS doc, add the following to the very top of the document  
+```
+import insertElementNameHere from './docTitle2.js';
+```  
+* in your secondary JS doc (saved to whatever title matching `./docTitle2.js`), add the following to the very bottom of the document
+```
+export default insertElementNameHere;
+```
+* See an example of this import/export with the Recipes Webpage
+
+Part II (in VS Code Editor)
+* Make sure you have the Live Server Extension on VS Code
+* Have your HTML file open (saved as 'index.html')
+* Open the folder with the documents you are using (This is on the left hand side menu bar). The doc's folder must be open in the sidebar
+* on the HTML page, right click and select "Go Live" or CMD+L, CMD+O
+* the page should open up in a new chrome window
+* Part II Troubleshooting solution found [HERE](https://github.com/ritwickdey/vscode-live-server/issues/248)
+
 ###### |[Table of Contents](#tableOfContents)| 
 
 <hr>
@@ -1058,6 +1084,44 @@ Order matters (the `rest` paramenter MUST BE the last parameter). There also can
 function fullName(...titles, first, last) // INVALID
 function fullName(first, last, ...titles, ...misc)  // INVALID
 ```
+
+<ins>JS Classes - Syntactical Sugar</ins>  
+
+```
+class Color {
+	constructor(r, g, b) {
+	}
+}
+```
+Above is just the basic structure of a JS class; It must have a `class` keyword as well as call the `constructor` and then you would add in whatever code you wanted to run. This is used with the `new` keyword as well (Colt's JS course Section 19)
+
+* Another few important keywords are the following:
+
+	* Extends: this is used to extend a function into another one.  
+	```
+	class Pet {
+		constructor(name, age){
+			this.name = name;
+			this.age = age;
+		}
+		eat(){
+			return `$(this.name) is eating!`;
+		}
+	}
+	class Cat extends Pet {
+		meow(){
+			return 'MEOW!';
+		}
+	}
+	class Dog extends Pet {
+		bark() {
+			return 'Woof!'
+		}
+	}
+
+	```
+	* Super: is another way to refer to a 'parent' function
+
 
 ###### |[Table of Contents](#tableOfContents)| 
 
