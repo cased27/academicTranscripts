@@ -39,6 +39,7 @@ This is a compilation of my notes about the basics of HTML.<br>
 | `<option>`...`</option>`        | option            | used w/ `<select>` tag                                 |
 | `<textarea>`...`</textarea>`    | text box          | lrg text input box; adjustable size                    |
 | `<link>`                        | link (CSS & HTML) | `<link rel="stylesheet" type="text/css" href="">`      |
+| `<svg>` |     | creates a 'text box' or sorts where you can draw/add shapes. It takes a width & height value as well as the selected shapes' specifications. You can add multiple shapes to an `<svg>` but if they are bigger than the element itself it will overflow offscreen
 
 ------
 

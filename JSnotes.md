@@ -307,11 +307,20 @@ Adding a function as a property/value of an object
 
 <ins>KEYWORD “THIS” </ins>
 
-A type of method (`this.`) added to objects in order to access/share pre-defined data. It is an object. It's a common pattern to organize code: you take data, put it inside an object, then take associated functions and add them as methods to the same object and use the keyword THIS to access the data that was pre-defined.  
+A type of method (`this.`) added to objects in order to access/share pre-defined data. It is an object. It's a common pattern to organize code: you take data, put it inside an object, then take associated functions and add them as methods to the same object and use the keyword THIS to access the data that was pre-defined. See the [timerApp Project](https://cased27.github.io/timerApp/) for more examples.    
 
 The value of `this` is different depending on where it is in the code. It may refer to the global window or it may be references inside a function causing it to have a different value.  
 
-Note: If you use an `=>` (arrow function) it will refer the `this` to the global window or the parent function/window which can help allow you to access the desired scope and information
+Note: If you use an `=>` (arrow function) it will refer the `this` to the global window or the parent function/window which can help allow you to access the desired scope and information.  
+
+Below is a table to help determine the value of `this` in different scenarios  
+
+| Question / Scenario                    | Value of `this`                                                                                                                                 |
+|----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+| Was it an arrow function?              | `console.log(this)` on the first valid line above the arrow function. Value of `this` in the arrow function will be equal to that `console.log` |
+| Was 'bind', 'call' or 'apply' invoked? | `this` is equal to the first argument of the 'bind', 'call' or 'apply'                                                                          |
+| All other cases                        | `this` is equal to whatever is the to the left of the '.' in the method call                                                                    |
+
 
 [DOM Methods](#domMethods)
 
@@ -1390,12 +1399,12 @@ evens // [34, 54, 102, 32]
 
 	the reduce() method above will go through each value of the array, store the accumulated value, and then use that accumulated value to continue through the array. If there is no initial value the first value of the array will be used as the first value/ accumulator. It looks like this (using the above as the example):
 
-	 | Callback    | Accumulator | currentValue | Return Value |
-	 |-------------|:-----------:|:------------:|:------------:|
-	 | First call  |      3      |      5       |      8       |
-	 | Second call |      8      |      7       |      15      |
-	 | Thrid call  |     15      |      9       |      24      |
-	 | Fourth call |     24      |      11      |      35      |
+| Callback    | Accumulator | currentValue | Return Value |
+|-------------|:-----------:|:------------:|:------------:|
+| First call  |      3      |      5       |      8       |
+| Second call |      8      |      7       |      15      |
+| Thrid call  |     15      |      9       |      24      |
+| Fourth call |     24      |      11      |      35      |
 
 	If you wanted to get the product of the values (instead of the sum, as seen above) you could write the code like this:
 	```
@@ -1414,11 +1423,11 @@ evens // [34, 54, 102, 32]
 	```
 	Running through the array would look like this where you have each value being compared to each other and the higher value is returned and compared to the next value in the array
 
-	 | Callback    | Accumulator | currentValue | Return Value |
-	 |-------------|:-----------:|:------------:|:------------:|
-	 | First call  |      87      |      64       |      87       |
-	 | Second call |      87      |      96       |      96      |
-	 | Thrid call  |     96      |      92       |      96      |
+| Callback    | Accumulator | currentValue | Return Value |
+|-------------|:-----------:|:------------:|:------------:|
+| First call  |     87      |      64      |      87      |
+| Second call |     87      |      96      |      96      |
+| Thrid call  |     96      |      92      |      96      |
 
 	This will continue through the entire array until it discovers that '99' is the max value
 
